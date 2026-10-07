@@ -299,3 +299,44 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 @media (max-width: 400px) {
   .header-cta { display: none; }
 }
+
+/* ================= PY2027 NOTICE / ALERTS =================
+   Built from existing brand tokens only — no new palette. */
+.notice {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-left: 5px solid var(--crimson);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin: 0 0 30px;
+  box-shadow: var(--shadow-sm);
+}
+.notice-title {
+  font-family: var(--heading); font-weight: 900; font-size: 1.06rem;
+  color: var(--crimson-dark); margin: 0 0 10px;
+  display: flex; align-items: center; flex-wrap: wrap; gap: 10px;
+}
+.notice-tag {
+  font-size: .64rem; letter-spacing: .07em; text-transform: uppercase;
+  background: var(--crimson); color: #fff; padding: 4px 10px;
+  border-radius: 999px; font-weight: 700; white-space: nowrap;
+}
+.notice p { margin: 0 0 10px; font-size: .95rem; color: var(--gray-700); }
+.notice p:last-child { margin-bottom: 0; }
+.notice ul { margin: 0 0 12px; padding-left: 20px; font-size: .95rem; color: var(--gray-700); }
+.notice li { margin-bottom: 6px; }
+.notice-src { font-size: .86rem; color: var(--gray-600); }
+
+/* Urgent badge variant + per-card alert line */
+.badge--alert { background: var(--crimson); color: #fff; }
+.state-alert {
+  font-size: .87rem; color: var(--crimson-dark); background: #fdeef1;
+  border: 1px solid #f4c9d3; border-radius: var(--radius-sm);
+  padding: 10px 12px; margin: 0 0 14px;
+}
+.state-alert strong { font-weight: 700; }
+
+@media (max-width: 620px) {
+  .notice { padding: 16px 18px; }
+  .notice-title { font-size: 1rem; }
+}
