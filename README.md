@@ -8,6 +8,7 @@ Plan Year 2027 · Built for Pinnacle Financial Services.
 ## Files
 - `index.html` — the page
 - `style.css` — styles (PFS brand: crimson #aa0e33, charcoal #2c2c2c, Roboto/Open Sans)
+- `pre65/index.html` — Pre-65 ACA Strategy Guide for agents & brokers (early retirees, MAGI, 400% FPL cliff, HSA strategy, built-in cliff calculator)
 - `script.js` — client-side state search/filter (vanilla JS, no dependencies)
 - `assets/CMS-FFM-Registration-Guide-PY2027.pdf` — CMS returning-agent registration guide (linked from the Federal section)
 - `assets/favicon.svg` — site icon
