@@ -1,17 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>Pre-65 ACA Strategy Guide | Pinnacle Financial Services</title>
-<meta name="description" content="A Plan Year 2027 strategy guide for independent agents and brokers serving early retirees: SEP rules, MAGI, the 400% FPL subsidy cliff, HSA strategies, the Medicare handoff, and a blueprint to find and close pre-65 clients.">
-<meta name="theme-color" content="#2c2c2c">
-<meta property="og:title" content="The Pre-65 ACA Strategy Guide for Agents &amp; Brokers">
-<meta property="og:description" content="Early retirees have the money and the plan, but not the health insurance. Here is how to find them, protect their subsidies, and keep them for life.">
-<link rel="icon" href="../favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<meta content="A Plan Year 2027 strategy guide for independent agents and brokers serving early retirees: SEP rules, MAGI, the 400% FPL subsidy cliff, HSA strategies, the Medicare handoff, and a blueprint to find and close pre-65 clients." name="description"/>
+<meta content="#2c2c2c" name="theme-color"/>
+<meta content="The Pre-65 ACA Strategy Guide for Agents &amp; Brokers" property="og:title"/>
+<meta content="A practical guide to early-retiree coverage, income planning, HSA eligibility and the transition to Medicare." property="og:description"/>
+<link href="../favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
 <style>
 :root{
   --crimson:#aa0e33;--crimson-dk:#850a27;--crimson-50:#fbeef1;
@@ -36,7 +37,7 @@ h1,h2,h3,h4{font-family:var(--heading);line-height:1.2;color:var(--ink)}
 .top{border-bottom:1px solid var(--line);background:var(--white)}
 .top-inner{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);font-family:var(--heading);font-weight:700;line-height:1.25}
-.brand .mark{width:40px;height:40px;border-radius:8px;background:var(--crimson);color:#fff;display:grid;place-items:center;font-weight:900;font-size:16px;letter-spacing:.5px}
+.brand-group{display:flex;align-items:center;gap:20px}.brand img{width:156px;height:auto;display:block}.brand-title{border-left:1px solid var(--line);padding-left:20px;font:700 14px/1.4 var(--heading)}.brand-title small{display:block;font:400 12px/1.5 var(--body);color:var(--muted)}.review-pill{display:inline-block;border:1px solid #666;border-radius:999px;padding:5px 12px;color:#e4e4e4;font-size:12px;margin:0 0 20px}.sources{line-height:1.8}.source-list{display:grid;gap:8px}.calc input[type=checkbox]{width:auto}.result-note{font-size:13px;line-height:1.6}.top-links{flex-wrap:wrap}.hero{background:linear-gradient(135deg,#20242b,#30333a)}.box{box-shadow:0 2px 10px #20242b06}.field input:focus,.field select:focus{border-color:var(--crimson)}
 .brand small{display:block;font-weight:500;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted)}
 .top-links{display:flex;gap:20px;font-size:14px;font-family:var(--heading);font-weight:500}
 .top-links a{text-decoration:none}
@@ -109,7 +110,7 @@ td:first-child{font-weight:600;min-width:170px}
 .steps{counter-reset:s;list-style:none;padding:0}
 .steps li{counter-increment:s;position:relative;padding:0 0 0 46px;margin:0 0 18px}
 .steps li::before{content:counter(s);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--crimson);color:#fff;display:grid;place-items:center;font:700 14px var(--heading)}
-.steps li strong{display:block;font-family:var(--heading)}
+.steps li > strong:first-child{display:block;font-family:var(--heading)}
 .quote{font-size:17px;border:1px dashed #c9c9cf;border-radius:var(--radius);padding:18px 20px;background:var(--paper);margin:16px 0}
 .quote p:last-child{margin:0}
 
@@ -170,6 +171,7 @@ footer p{max-width:900px}
   .grid2,.grid3,.calc-grid,.result-top{grid-template-columns:1fr}
   .rail nav{grid-template-columns:1fr}
   .top-links{gap:14px;font-size:13px}
+  .brand-group{gap:12px}.brand img{width:128px}.brand-title{padding-left:12px;font-size:12px}.brand-title small{font-size:11px}
   .calc{padding:18px}
   .contact{padding:26px 20px}
 }
@@ -188,412 +190,303 @@ footer p{max-width:900px}
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
-
 <header class="top">
-  <div class="wrap top-inner">
-    <a class="brand" href="#"><span class="mark" aria-hidden="true">PFS</span><span>Pinnacle Financial Services<small>Pre-65 ACA Strategy Guide</small></span></a>
-    <div class="top-links"><a href="../">ACA Certification Hub</a><a href="#calculator">Cliff calculator</a><a href="Pre-65-ACA-Strategy-Guide-PY2027.pdf" download>PDF guide</a><a href="#contact">Contact</a></div>
-  </div>
-</header>
-
-<section class="hero" aria-labelledby="hero-title">
-  <div class="wrap hero-grid">
-    <div>
-      <p class="eyebrow">Plan Year 2027 &middot; For independent agents &amp; brokers</p>
-      <h1 id="hero-title">The Pre-65 Retiree <em>Strategy Guide</em></h1>
-      <p class="hero-lead">Stop chasing the same leads every other agent is buying. People who retire before 65 have the money and the plan, but no idea how to cover themselves until Medicare. This guide covers the rules, the income math, and a blueprint for finding these clients, closing them, and keeping them.</p>
-      <div class="actions">
-        <a class="btn" href="#calculator">Run the cliff calculator</a>
-        <a class="btn ghost" href="#blueprint">Jump to the blueprint</a>
-        <a class="btn ghost" href="Pre-65-ACA-Strategy-Guide-PY2027.pdf" download>Download the PDF guide</a>
-      </div>
-    </div>
-    <aside class="cliff-card" aria-labelledby="cliff-title">
-      <p class="eyebrow" style="color:#cfcfcf;margin-bottom:8px">Know these numbers cold</p>
-      <h2 id="cliff-title">PY2027 400% FPL subsidy cliff</h2>
-      <p class="sub">2027 coverage uses the 2026 HHS poverty guidelines (48 states &amp; DC).</p>
-      <div class="cliff-row"><span>Single retiree</span><strong>$63,840</strong></div>
-      <div class="cliff-row"><span>Retired couple</span><strong>$86,560</strong></div>
-      <div class="cliff-row"><span>2027 HSA max, couple 55+</span><strong>$11,000</strong></div>
-      <p class="fine">At $1 above the cliff, the premium tax credit drops to $0. Alaska and Hawaii use higher guidelines. HSA figure: $9,000 family limit plus a $1,000 catch-up for each spouse, which requires two HSAs.</p>
-    </aside>
-  </div>
-</section>
-
-<div class="strip"><div class="wrap"><p><strong>Open Enrollment is open now.</strong> HealthCare.gov runs November 1, 2026 &ndash; January 15, 2027. Enroll by December 15 for a January 1 start. State-based marketplaces set their own deadlines, so check yours.</p></div></div>
-
-<div class="wrap layout">
-  <aside class="rail" aria-label="Guide contents">
-    <h2>In this guide</h2>
-    <nav>
-      <a href="#opportunity">1. The opportunity</a>
-      <a href="#enrollment">2. Enrollment &amp; SEP rules</a>
-      <a href="#magi">3. What counts as MAGI</a>
-      <a href="#cliff">4. The subsidy cliff</a>
-      <a href="#calculator">5. Cliff calculator</a>
-      <a href="#levers">6. Levers that save subsidies</a>
-      <a href="#hsa">7. The HSA play</a>
-      <a href="#medicare">8. The Medicare handoff</a>
-      <a href="#blueprint">9. Find &amp; close blueprint</a>
-      <a href="#compliance">10. Compliance guardrails</a>
-      <a href="#faq">11. FAQ</a>
-    </nav>
-    <a class="btn" href="Pre-65-ACA-Strategy-Guide-PY2027.pdf" download>Download PDF</a>
-    <a class="btn light" href="#contact" style="margin-top:8px">Talk with Sam</a>
-  </aside>
-
-  <main id="main">
-
-    <!-- 1 -->
-    <section class="guide" id="opportunity" aria-labelledby="h-opp">
-      <p class="kicker">Section 1</p>
-      <h2 id="h-opp">A client base hiding in plain sight</h2>
-      <p class="lede">Early retirees are some of the best clients in the individual market. They're organized and financially literate, they plan years ahead, and they stay with an advisor they trust. Most agents never go after them.</p>
-      <div class="grid3">
-        <div class="box"><span class="stat">3&times;</span><p>ACA age rating lets a 64-year-old be charged up to three times what a 21-year-old pays, so these households have the most premium at stake and the biggest possible tax credits.</p></div>
-        <div class="box"><span class="stat">1&ndash;10 yrs</span><p>That's how long they need coverage before Medicare, renewed every Open Enrollment, each year a new chance to review and retain.</p></div>
-        <div class="box"><span class="stat">Age 65</span><p>That's when they move to Medicare, and the agent who guided them through the gap is the obvious choice to write their Medicare business.</p></div>
-      </div>
-      <h3>Why they need an advisor, not a quote</h3>
-      <ul>
-        <li><strong>The enrollment rules aren't intuitive.</strong> Retiring doesn't create a Special Enrollment Period. Losing job-based coverage does.</li>
-        <li><strong>Their income is a choice.</strong> Unlike a W-2 employee, a retiree decides how much income shows up on the tax return through withdrawals, conversions and asset sales. Those decisions set the subsidy.</li>
-        <li><strong>The penalty for getting it wrong is large.</strong> The 400% FPL cliff and the end of repayment caps mean a single bad withdrawal can cost a household thousands in premium tax credits.</li>
-        <li><strong>Their other advisors usually don't see the health insurance side.</strong> Financial planners and CPAs know the tax code but rarely know marketplace rules. The agent who connects the two becomes the one they rely on.</li>
-      </ul>
-    </section>
-
-    <!-- 2 -->
-    <section class="guide" id="enrollment" aria-labelledby="h-enr">
-      <p class="kicker">Section 2</p>
-      <h2 id="h-enr">Enrollment &amp; Special Enrollment Period rules</h2>
-      <p>Outside Open Enrollment, a consumer needs a qualifying life event. The most common mistake retirees make is assuming the retirement itself qualifies.</p>
-      <div class="table-wrap"><table>
-        <thead><tr><th>Situation</th><th>SEP?</th><th>What to tell the client</th></tr></thead>
-        <tbody>
-          <tr><td>Retiring (by itself)</td><td><span class="tag no">No</span></td><td>Retirement isn't a qualifying event. The <em>loss of coverage</em> that comes with it is.</td></tr>
-          <tr><td>Losing job-based coverage at retirement</td><td><span class="tag yes">Yes</span></td><td>Loss of minimum essential coverage opens a 60-day window, and they can apply up to 60 days <em>before</em> the coverage ends. Plan the date so there's no gap.</td></tr>
-          <tr><td>Spouse's employer coverage ends</td><td><span class="tag yes">Yes</span></td><td>Each person losing coverage qualifies, including dependents.</td></tr>
-          <tr><td>Electing COBRA, then dropping it mid-year</td><td><span class="tag no">No</span></td><td>Voluntarily ending COBRA or not paying premiums outside Open Enrollment isn't a qualifying event. They can switch at Open Enrollment.</td></tr>
-          <tr><td>COBRA runs out (exhaustion)</td><td><span class="tag yes">Yes</span></td><td>Reaching the end of the COBRA period counts as loss of coverage.</td></tr>
-          <tr><td>Retiree health plan ends or employer drops it</td><td><span class="tag yes">Yes</span></td><td>Involuntary loss of retiree coverage qualifies.</td></tr>
-          <tr><td>Moving to a new state or ZIP in retirement</td><td><span class="tag maybe">Often</span></td><td>A permanent move qualifies if they had qualifying coverage for at least one of the 60 days before the move.</td></tr>
-          <tr><td>Open Enrollment</td><td><span class="tag yes">Anyone</span></td><td>No event needed. Right now is the cleanest time to move a retiree off COBRA.</td></tr>
-        </tbody>
-      </table></div>
-
-      <h3>COBRA and retiree coverage: eligible vs. enrolled</h3>
-      <p>Being <strong>eligible</strong> for COBRA or retiree coverage doesn't block the premium tax credit. Being <strong>enrolled</strong> does, for every month they stay on it. Run the marketplace numbers before the client signs the COBRA election. COBRA often costs 102% of the full group premium, and a subsidized marketplace plan can come in far lower.</p>
-
-      <div class="callout amber">
-        <p><strong>The retirement-year trap:</strong> eligibility for the premium tax credit is based on <em>annual</em> household income. A client who retires in June still reports the January&ndash;June salary, PTO payout, severance and bonus for that year. Projected income for the retirement year may push them over the cliff even though their January income will be much lower. Compare COBRA for the rest of the first year with a marketplace plan starting January 1, then pick the one that costs less.</p>
-      </div>
-    </section>
-
-    <!-- 3 -->
-    <section class="guide" id="magi" aria-labelledby="h-magi">
-      <p class="kicker">Section 3</p>
-      <h2 id="h-magi">What counts as MAGI, dollar for dollar</h2>
-      <p>Marketplace subsidies are based on household Modified Adjusted Gross Income: AGI, plus tax-exempt interest, plus the <strong>non-taxable</strong> portion of Social Security, plus excluded foreign income. Many retirees and even some advisors get this wrong.</p>
-      <div class="table-wrap"><table>
-        <thead><tr><th>Income source</th><th>Counts?</th><th>Notes</th></tr></thead>
-        <tbody>
-          <tr><td>Traditional IRA / 401(k) / 403(b) withdrawals</td><td><span class="tag no">Yes, fully</span></td><td>Every pre-tax dollar withdrawn is MAGI.</td></tr>
-          <tr><td>Roth conversions</td><td><span class="tag no">Yes, fully</span></td><td>The converted amount is taxable income in the year of conversion. This is the most common reason retirees go over the cliff.</td></tr>
-          <tr><td>Social Security benefits</td><td><span class="tag no">Yes, 100%</span></td><td>ACA MAGI adds back the non-taxable part, so the <em>whole</em> benefit counts, not just the taxable portion (up to 85%).</td></tr>
-          <tr><td>Pensions and annuity payments</td><td><span class="tag no">Yes</span></td><td>Only the taxable portion counts. Return of after-tax basis doesn't.</td></tr>
-          <tr><td>Part-time, consulting or 1099 income</td><td><span class="tag no">Yes</span></td><td>Counted net of business expenses and the deductible half of SE tax.</td></tr>
-          <tr><td>Capital gains, dividends, interest</td><td><span class="tag no">Yes</span></td><td>Tax-exempt muni interest counts too. Only the <em>gain</em> on a sale counts, not the principal.</td></tr>
-          <tr><td>Qualified Roth IRA / Roth 401(k) withdrawals</td><td><span class="tag yes">No</span></td><td>Tax-free and not part of MAGI, a key tool for managing income.</td></tr>
-          <tr><td>Cash savings, return of principal</td><td><span class="tag yes">No</span></td><td>Spending from a checking or savings account doesn't create income.</td></tr>
-          <tr><td>HSA qualified distributions</td><td><span class="tag yes">No</span></td><td>Tax-free when used for qualified medical expenses.</td></tr>
-          <tr><td>Loan proceeds, reverse-mortgage draws, gifts</td><td><span class="tag yes">No</span></td><td>Not income.</td></tr>
-        </tbody>
-      </table></div>
-      <p class="small">Household MAGI includes the tax filer, spouse, and any dependents required to file a return. Married couples generally must file jointly to claim the credit (limited exceptions apply).</p>
-    </section>
-
-    <!-- 4 -->
-    <section class="guide" id="cliff" aria-labelledby="h-cliff">
-      <p class="kicker">Section 4</p>
-      <h2 id="h-cliff">The 400% FPL subsidy cliff</h2>
-      <p>The enhanced subsidies that removed the upper income cap expired at the end of 2025. For Plan Year 2027, households with income above 400% of the federal poverty level get <strong>no premium tax credit at all</strong>. Below the line, the expected contribution is capped at roughly 10% of income, so at age 60&ndash;64 the credit can easily be worth more than $15,000 a year for a couple.</p>
-
-      <div class="grid2">
-        <div class="box">
-          <h3>Illustrative couple, age 62 and 63</h3>
-          <p>Benchmark silver premium: about <strong>$2,100/month</strong> ($25,200/yr).</p>
-          <ul>
-            <li><strong>MAGI $86,000</strong> (397% FPL): expected contribution of about 10% = ~$8,600, so the tax credit is <strong>about $16,600</strong>.</li>
-            <li><strong>MAGI $87,000</strong> (402% FPL): tax credit is <strong>$0</strong>.</li>
-          </ul>
-          <p class="small">An extra $1,000 IRA withdrawal costs this couple about $16,600. Figures are illustrative. Premiums vary by ZIP code and carrier.</p>
-        </div>
-        <div class="box">
-          <h3>No more safety net at tax time</h3>
-          <p>Starting with tax year 2026, the caps that limited how much excess advance credit a household had to repay are gone. If a client's actual income goes over the cliff, they repay <strong>every dollar</strong> of the advance credit when they file.</p>
-          <p>That makes income projection the most valuable thing you do for these clients, and the reason to check in mid-year and again in Q4.</p>
-        </div>
-      </div>
-
-      <h3>The floor matters too</h3>
-      <div class="callout">
-        <p>Early retirees living on cash savings or Roth money can report income so <em>low</em> that it causes a different problem:</p>
-        <ul>
-          <li><strong>Below 138% FPL in a Medicaid-expansion state</strong> ($22,025 single / $29,863 couple): they're likely Medicaid-eligible instead of subsidy-eligible. MAGI Medicaid has no asset test, so a household with $2M in savings may still qualify. Many retirees don't want that. Plan income above the line on purpose.</li>
-          <li><strong>Below 100% FPL in a non-expansion state</strong> ($15,960 single / $21,640 couple): no premium tax credit (the &ldquo;coverage gap&rdquo;). Realizing capital gains or doing a small Roth conversion can move them into the eligible range.</li>
-        </ul>
-      </div>
-      <p>The target for most pre-65 retirees is a range, not a single number: enough income to stay above the floor, low enough to stay below 400%, and ideally low enough to qualify for cost-sharing reductions on Silver plans (at or below 250% FPL).</p>
-      <p class="sources">Sources: <a href="https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines" target="_blank" rel="noopener noreferrer">HHS poverty guidelines</a><a href="https://www.irs.gov/affordable-care-act/individuals-and-families/the-premium-tax-credit-the-basics" target="_blank" rel="noopener noreferrer">IRS: Premium tax credit basics</a><a href="https://www.healthcare.gov/income-and-household-information/income/" target="_blank" rel="noopener noreferrer">HealthCare.gov: What to include as income</a></p>
-    </section>
-
-    <!-- 5 -->
-    <section class="guide" id="calculator" aria-labelledby="h-calc">
-      <p class="kicker">Section 5</p>
-      <h2 id="h-calc">MAGI &amp; cliff calculator</h2>
-      <p>Use this in a discovery meeting to show a client where they stand. Enter <strong>projected 2027 annual</strong> amounts for the whole tax household. Nothing you type is sent anywhere. It all runs in the browser.</p>
-
-      <form class="calc" id="calc" onsubmit="return false" aria-describedby="calc-note">
-        <h3>Household</h3>
-        <div class="calc-grid">
-          <div class="field"><label for="hh">Tax household size</label>
-            <select id="hh"><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option></select></div>
-          <div class="field"><label for="region">Location</label>
-            <select id="region"><option value="us">48 states &amp; DC</option><option value="ak">Alaska</option><option value="hi">Hawaii</option></select></div>
-        </div>
-
-        <h3>Projected income</h3>
-        <div class="calc-grid">
-          <div class="field"><label for="i-wages">Wages, self-employment, consulting (net)</label><input id="i-wages" type="number" inputmode="decimal" min="0" step="100" placeholder="0"></div>
-          <div class="field"><label for="i-trad">Traditional IRA / 401(k) withdrawals</label><input id="i-trad" type="number" inputmode="decimal" min="0" step="100" placeholder="0" value="60000"></div>
-          <div class="field"><label for="i-roth">Roth conversions</label><input id="i-roth" type="number" inputmode="decimal" min="0" step="100" placeholder="0" value="25000"></div>
-          <div class="field"><label for="i-ss">Social Security <span class="hint">Total annual benefit, including non-taxable part</span></label><input id="i-ss" type="number" inputmode="decimal" min="0" step="100" placeholder="0"></div>
-          <div class="field"><label for="i-pen">Pension / annuity (taxable portion)</label><input id="i-pen" type="number" inputmode="decimal" min="0" step="100" placeholder="0"></div>
-          <div class="field"><label for="i-inv">Capital gains, dividends, interest <span class="hint">Include tax-exempt interest</span></label><input id="i-inv" type="number" inputmode="decimal" min="0" step="100" placeholder="0" value="4000"></div>
-        </div>
-
-        <h3>Reductions &amp; premium</h3>
-        <div class="calc-grid">
-          <div class="field"><label for="i-hsa">HSA contributions <span class="hint">2027 max: $4,500 self / $9,000 family, +$1,000 per person 55+</span></label><input id="i-hsa" type="number" inputmode="decimal" min="0" step="100" placeholder="0"></div>
-          <div class="field"><label for="i-ded">Other above-the-line deductions <span class="hint">Deductible IRA, SE health insurance, etc.</span></label><input id="i-ded" type="number" inputmode="decimal" min="0" step="100" placeholder="0"></div>
-          <div class="field"><label for="i-bench">Benchmark silver premium, monthly <span class="hint">Optional. Second-lowest-cost silver from a HealthCare.gov quote.</span></label><input id="i-bench" type="number" inputmode="decimal" min="0" step="10" placeholder="e.g. 2100" value="2100"></div>
-          <div class="field"><label for="i-pct">Max expected contribution % <span class="hint">2026 figure shown. Update when IRS publishes 2027.</span></label><input id="i-pct" type="number" inputmode="decimal" min="0" max="20" step="0.01" value="9.96"></div>
-        </div>
-
-        <div class="result" aria-live="polite">
-          <div class="result-top">
-            <div><span>Projected MAGI</span><strong id="r-magi">$0</strong></div>
-            <div><span>% of FPL</span><strong id="r-fpl">0%</strong></div>
-            <div><span>400% cliff</span><strong id="r-cliff">$0</strong></div>
-          </div>
-          <div class="meter" aria-hidden="true"><div class="zone-over"></div><div class="pin" id="r-pin" style="left:0"></div></div>
-          <div class="meter-labels" aria-hidden="true"><span>0%</span><span>100%</span><span>200%</span><span>300%</span><span>400%</span><span>500%</span></div>
-          <div class="verdict" id="r-verdict"></div>
-        </div>
-        <p class="small" id="calc-note" style="margin:14px 0 0">Educational estimate only. It uses the 2026 HHS poverty guidelines that apply to Plan Year 2027 coverage. The subsidy estimate assumes the maximum contribution percentage, which applies from 300&ndash;400% FPL, and is approximate. Confirm eligibility with an actual Marketplace application, and have the client confirm tax treatment with a CPA or tax advisor.</p>
-      </form>
-    </section>
-
-    <!-- 6 -->
-    <section class="guide" id="levers" aria-labelledby="h-lev">
-      <p class="kicker">Section 6</p>
-      <h2 id="h-lev">Levers that pull clients back under the cliff</h2>
-      <p>You aren't the tax preparer, but you should know which levers exist so you can bring them up and coordinate with the client's financial advisor or CPA.</p>
-      <div class="grid2">
-        <div class="box"><h3>1. Mix the withdrawal sources</h3><p>Fund living expenses from a combination of cash, taxable brokerage principal, and Roth money so only part of each year's spending counts as MAGI. Only the gain on a taxable sale counts, not the whole sale.</p></div>
-        <div class="box"><h3>2. Right-size Roth conversions</h3><p>Convert up to the cliff, not past it. A conversion done in January can't be undone (recharacterization is gone), so many planners do conversions in Q4, once the rest of the year's income is known.</p></div>
-        <div class="box"><h3>3. Time Social Security</h3><p>Since 100% of the benefit counts, delaying Social Security until 65 or later often keeps MAGI lower during the pre-Medicare years and increases the lifetime benefit.</p></div>
-        <div class="box"><h3>4. Use HSA contributions</h3><p>An above-the-line deduction that, unlike a traditional IRA contribution, <strong>doesn't require earned income</strong>. See the next section.</p></div>
-        <div class="box"><h3>5. Bunch big events</h3><p>A home sale, a large one-time withdrawal, or a big conversion often belongs in a single &ldquo;sacrifice&rdquo; year, or after Medicare starts, instead of spread across every subsidy year.</p></div>
-        <div class="box"><h3>6. Harvest gains on purpose</h3><p>For clients near the floor, realizing capital gains can raise MAGI into the eligible range while resetting cost basis, so it helps on both fronts.</p></div>
-      </div>
-      <div class="callout green"><p><strong>Your talking point:</strong> &ldquo;Your financial advisor plans how much income you take each year. I make sure those numbers keep your health insurance subsidy. Let's get all three of us on the same page before you take your next withdrawal.&rdquo;</p></div>
-    </section>
-
-    <!-- 7 -->
-    <section class="guide" id="hsa" aria-labelledby="h-hsa">
-      <p class="kicker">Section 7</p>
-      <h2 id="h-hsa">The HSA play</h2>
-      <p class="lede">Pairing an HSA-qualified plan with HSA contributions is one of the few ways a retiree can <em>lower</em> MAGI after the income is already earned.</p>
-      <ol class="steps">
-        <li><strong>Enroll in an HSA-qualified plan.</strong> Starting in 2026, marketplace <strong>Bronze and Catastrophic</strong> plans count as HSA-compatible under federal law, along with any plan the carrier designates as an HSA-qualified HDHP. That gives you many more options than before.</li>
-        <li><strong>Open an HSA.</strong> Any HSA custodian works. It doesn't have to be tied to an employer. A spouse 55+ who wants the catch-up needs their own HSA.</li>
-        <li><strong>Contribute up to the 2027 limit.</strong> $4,500 self-only / $9,000 family, plus $1,000 for each eligible person 55 or older. A couple 55+ on family coverage can deduct up to <strong>$11,000</strong>.</li>
-        <li><strong>Lower MAGI dollar for dollar.</strong> The contribution is an above-the-line deduction, so no earned income is needed, unlike a traditional IRA.</li>
-        <li><strong>Make the final decision after year-end.</strong> 2027 contributions can be made until the 2027 tax filing deadline (April 2028). If the client's final numbers come in slightly over the cliff, a contribution may bring them back under before they file.</li>
-      </ol>
-      <div class="callout amber">
-        <p><strong>HSA guardrails to review with the client:</strong></p>
-        <ul>
-          <li>Contribution limits are prorated for months not covered by an HSA-qualified plan (with a &ldquo;last-month rule&rdquo; exception and a testing period).</li>
-          <li>Contributions must stop once the client enrolls in Medicare. Starting Social Security at or after 65 automatically enrolls them in Part A, and late Part A enrollment can be backdated up to 6 months, so plan the last contribution carefully.</li>
-          <li>Funds already in the HSA can be used tax-free for qualified expenses for life, including Medicare premiums (not Medigap) after 65.</li>
-          <li>Compare total cost: a lower premium and the tax savings against a higher deductible. A Silver plan with cost-sharing reductions may still be the better fit for lower-income households.</li>
-        </ul>
-      </div>
-      <p class="sources">Sources: <a href="https://www.irs.gov/publications/p969" target="_blank" rel="noopener noreferrer">IRS Publication 969</a><a href="https://www.healthcare.gov/high-deductible-health-plan/" target="_blank" rel="noopener noreferrer">HealthCare.gov: HSA-eligible plans</a></p>
-    </section>
-
-    <!-- 8 -->
-    <section class="guide" id="medicare" aria-labelledby="h-med">
-      <p class="kicker">Section 8</p>
-      <h2 id="h-med">The Medicare handoff: a client for life</h2>
-      <p>The pre-65 relationship has a natural next step. Map it out from the first meeting so the client knows you'll be with them at 65.</p>
-      <div class="table-wrap"><table>
-        <thead><tr><th>When</th><th>What you do</th></tr></thead>
-        <tbody>
-          <tr><td>Age 63</td><td>Bring up IRMAA. Medicare Part B and D premiums at 65 are based on MAGI from <strong>two years earlier</strong>, so large conversions at 63 can raise Medicare premiums at 65.</td></tr>
-          <tr><td>3 months before 65</td><td>Initial Enrollment Period opens. Enroll in Parts A &amp; B. Review Medigap vs. Medicare Advantage and Part D.</td></tr>
-          <tr><td>Medicare start month</td><td>Once eligible for premium-free Part A, the premium tax credit ends. <strong>Cancel the marketplace plan</strong> for the Medicare-eligible spouse, because the marketplace doesn't end it automatically. Repaying credits for overlap months is a common, avoidable mistake.</td></tr>
-          <tr><td>Younger spouse</td><td>Stays on the marketplace plan, re-run the application with the new household coverage, and keep managing MAGI until their own 65th birthday. That's often several more years of service.</td></tr>
-        </tbody>
-      </table></div>
-      <div class="callout green"><p>Also look at your existing Medicare book. Medicare clients with a <strong>spouse under 65</strong> who's retiring are pre-65 prospects you already have a relationship with.</p></div>
-    </section>
-
-    <!-- 9 -->
-    <section class="guide" id="blueprint" aria-labelledby="h-blue">
-      <p class="kicker">Section 9</p>
-      <h2 id="h-blue">The blueprint: find, close and keep</h2>
-
-      <h3>Where to find pre-65 retirees</h3>
-      <div class="grid2">
-        <div class="box"><h3>Referral partners</h3><ul><li>Fee-only financial planners and RIAs</li><li>CPAs and enrolled agents (especially Q4 tax planning)</li><li>Estate-planning attorneys</li><li>Retirement-income and annuity specialists</li></ul></div>
-        <div class="box"><h3>Your own book</h3><ul><li>Younger spouses of Medicare clients</li><li>Individual clients turning 55&ndash;64</li><li>Life, annuity and P&amp;C clients near retirement</li><li>Past COBRA quotes that never converted</li></ul></div>
-        <div class="box"><h3>Life events</h3><ul><li>Early-retirement and voluntary separation packages</li><li>Layoffs and plant closings (public WARN notices)</li><li>Retiring teachers, public-safety and municipal employees whose retiree coverage is limited or ends</li><li>Business owners selling a company</li></ul></div>
-        <div class="box"><h3>Content &amp; community</h3><ul><li>Short videos on the cliff and SEP myths</li><li>&ldquo;Retiring before 65?&rdquo; workshops at libraries and community centers</li><li>LinkedIn posts aimed at people 55&ndash;64 and their advisors</li><li>Co-hosted webinars with a financial planner</li></ul></div>
-      </div>
-
-      <h3>The discovery conversation</h3>
-      <ol>
-        <li>When does your employer coverage end, and is there a retiree plan or COBRA offer?</li>
-        <li>Who's in your tax household, and when does each person turn 65?</li>
-        <li>What income will you have this year and next year: pension, Social Security, withdrawals, consulting, investment income?</li>
-        <li>Is a Roth conversion, home sale or large withdrawal planned in the next few years?</li>
-        <li>Which doctors, hospitals and prescriptions must stay in network?</li>
-        <li>Who is your financial advisor or CPA, and may I coordinate with them?</li>
-      </ol>
-
-      <h3>A talk track that positions you as the advisor</h3>
-      <div class="quote"><p>&ldquo;Most people don't realize that retiring doesn't give you a special enrollment period, but losing your work coverage does. And because your subsidy is based on your <em>retirement</em> income, a single large IRA withdrawal or Roth conversion can cost you thousands. My job is to set up your coverage so the income plan you've already built doesn't cost you your tax credit, and then guide you into Medicare when you turn 65.&rdquo;</p></div>
-
-      <h3>Annual service calendar</h3>
-      <div class="table-wrap"><table>
-        <thead><tr><th>When</th><th>Touchpoint</th></tr></thead>
-        <tbody>
-          <tr><td>Nov &ndash; Jan (Open Enrollment)</td><td>Re-project next year's MAGI, re-shop plans, confirm networks and drug lists, and decide on an HSA plan.</td></tr>
-          <tr><td>Feb &ndash; Apr (tax season)</td><td>Remind clients to reconcile on Form 8962 with Form 1095-A, and coordinate any prior-year HSA contribution with their CPA.</td></tr>
-          <tr><td>Mid-year</td><td>Income check-in. Report changes to the Marketplace promptly so advance credits stay accurate.</td></tr>
-          <tr><td>September &ndash; October</td><td>Q4 planning call with the client and their financial advisor before any conversion or harvesting.</td></tr>
-          <tr><td>Birthdays 63 &amp; 64</td><td>Start the IRMAA and Medicare conversation.</td></tr>
-        </tbody>
-      </table></div>
-    </section>
-
-    <!-- 10 -->
-    <section class="guide" id="compliance" aria-labelledby="h-comp">
-      <p class="kicker">Section 10</p>
-      <h2 id="h-comp">Compliance guardrails</h2>
-      <ul class="check">
-        <li>Complete Plan Year 2027 Marketplace registration and training before you enroll anyone. See the <a href="../">ACA Certification Hub</a> for federal and state requirements.</li>
-        <li>Document consumer consent and review the eligibility application with the client before submission, as federal Marketplace rules require.</li>
-        <li>Use the client's own good-faith income projection. You can explain what counts as income, but the client attests to the number.</li>
-        <li>Stay in your lane on tax and investment advice. Explain how the rules work, and send specific tax, withdrawal and conversion decisions to a CPA, enrolled agent or licensed financial professional.</li>
-        <li>Follow your state's insurance department rules and each carrier's marketing guidelines for ads, social posts and seminars.</li>
-      </ul>
-    </section>
-
-    <!-- 11 -->
-    <section class="guide" id="faq" aria-labelledby="h-faq">
-      <p class="kicker">Section 11</p>
-      <h2 id="h-faq">Frequently asked questions</h2>
-      <details><summary>Does a big 401(k) balance disqualify someone from subsidies?</summary><div class="body"><p>No. Marketplace subsidies look at income, not assets. A household with a large balance can still qualify if the amount they withdraw keeps MAGI under 400% FPL.</p></div></details>
-      <details><summary>Does income from the year before retirement matter?</summary><div class="body"><p>The Marketplace uses projected income for the coverage year. The retirement year itself includes any wages earned before retiring, which is why the first partial year often needs separate planning.</p></div></details>
-      <details><summary>What if a client's income comes in higher than projected?</summary><div class="body"><p>They reconcile on Form 8962. Starting with tax year 2026, there's no cap on repaying excess advance credits. Clients near the cliff should report income changes during the year, and may be able to use a deductible HSA contribution before filing.</p></div></details>
-      <details><summary>Can a client take less advance credit to be safe?</summary><div class="body"><p>Yes. Clients can choose to take only part of the credit in advance and claim the rest at tax time. That can be a sensible cushion for retirees whose income is uncertain.</p></div></details>
-      <details><summary>Are tax-free Roth withdrawals really excluded?</summary><div class="body"><p>Qualified Roth distributions aren't included in AGI and aren't added back for ACA MAGI. Non-qualified distributions of earnings can be taxable, so confirm the client's Roth holding period and age with their tax advisor.</p></div></details>
-      <details><summary>Are the enhanced subsidies coming back?</summary><div class="body"><p>As of this guide's review date, the enhanced credits have expired and the 400% FPL limit is back for Plan Year 2027. Congress could change that. Check current law before quoting, and update the calculator's contribution percentage when the IRS publishes the 2027 figure.</p></div></details>
-    </section>
-
-    <section class="contact" id="contact" aria-labelledby="h-contact">
-      <p class="kicker">Let's talk</p>
-      <h2 id="h-contact">Want help building your pre-65 practice?</h2>
-      <p>Whether you're working your first early-retiree case or building a referral program with local financial advisors, Pinnacle can help with contracting, certification and case strategy.</p>
-      <p class="name">Sam Tripp</p>
-      <p>Sales Director &ndash; ACA &middot; Pinnacle Financial Services<br>
-      <a href="mailto:Samuel.Tripp@pfsinsurance.com">Samuel.Tripp@pfsinsurance.com</a><br>
-      <a href="tel:+18007726881,7721">(800) 772-6881 ext. 7721</a></p>
-      <p style="margin:18px 0 0"><a class="btn" href="Pre-65-ACA-Strategy-Guide-PY2027.pdf" download style="color:#fff">Download the 7-page PDF guide &amp; client worksheet</a></p>
-    </section>
-  </main>
+<div class="wrap top-inner">
+<div class="brand-group"><a aria-label="Visit Pinnacle Financial Services" class="brand" href="https://pfsinsurance.com/"><img alt="Pinnacle Financial Services" height="118" src="assets/pinnacle-logo.png" width="196"/></a><span class="brand-title">Agent &amp; Broker Resources<small>Pre-65 ACA Strategy Guide</small></span></div>
+<div class="top-links"><a href="../">ACA Certification Hub</a><a href="#calculator">Cliff calculator</a><a download="" href="Pre-65-ACA-Strategy-Guide-PY2027.pdf">PDF guide</a><a href="#contact">Contact</a></div>
 </div>
-
+</header>
+<section aria-labelledby="hero-title" class="hero">
+<div class="wrap hero-grid">
+<div>
+<p class="eyebrow">Plan Year 2027 · For independent agents &amp; brokers</p><p class="review-pill">Reviewed November 13, 2026 · Official sources linked below</p>
+<h1 id="hero-title">The Pre-65 Retiree <em>Strategy Guide</em></h1>
+<p class="hero-lead">Help clients bridge retirement and Medicare with confidence. Understand enrollment windows, coordinate income planning, and compare coverage that fits their doctors, prescriptions and budget.</p>
+<div class="actions">
+<a class="btn" href="#calculator">Run the cliff calculator</a>
+<a class="btn ghost" href="#blueprint">Jump to the blueprint</a>
+<a class="btn ghost" download="" href="Pre-65-ACA-Strategy-Guide-PY2027.pdf">Download the PDF guide</a>
+</div>
+</div>
+<aside aria-labelledby="cliff-title" class="cliff-card">
+<p class="eyebrow" style="color:#cfcfcf;margin-bottom:8px">Know these numbers cold</p>
+<h2 id="cliff-title">PY2027 400% FPL subsidy cliff</h2>
+<p class="sub">2027 coverage uses the 2026 HHS poverty guidelines (48 states &amp; DC).</p>
+<div class="cliff-row"><span>Single retiree</span><strong>$63,840</strong></div>
+<div class="cliff-row"><span>Retired couple</span><strong>$86,560</strong></div>
+<div class="cliff-row"><span>2027 HSA max, couple 55+</span><strong>$11,000</strong></div>
+<p class="fine">At $1 above the cliff, the premium tax credit drops to $0. Alaska and Hawaii use higher guidelines. HSA figure: $9,000 family limit plus a $1,000 catch-up for each spouse, which requires two HSAs, full-year eligibility for both spouses and sufficient unused contribution room. Employer contributions count toward the limits.</p>
+</aside>
+</div>
+</section>
+<div class="strip"><div class="wrap"><p><strong>2027 Open Enrollment.</strong> HealthCare.gov runs November 1, 2026 – January 15, 2027. Enroll by December 15 for a January 1 start. State-based marketplaces set their own deadlines, so check yours.</p></div></div>
+<div class="wrap layout">
+<aside aria-label="Guide contents" class="rail">
+<h2>In this guide</h2>
+<nav>
+<a href="#opportunity">1. The opportunity</a>
+<a href="#enrollment">2. Enrollment &amp; SEP rules</a>
+<a href="#magi">3. What counts as MAGI</a>
+<a href="#cliff">4. The subsidy cliff</a>
+<a href="#calculator">5. Cliff calculator</a>
+<a href="#levers">6. Levers that save subsidies</a>
+<a href="#hsa">7. The HSA play</a>
+<a href="#medicare">8. The Medicare handoff</a>
+<a href="#blueprint">9. Find &amp; close blueprint</a>
+<a href="#compliance">10. Compliance guardrails</a>
+<a href="#faq">11. FAQ</a>
+</nav>
+<a class="btn" download="" href="Pre-65-ACA-Strategy-Guide-PY2027.pdf">Download PDF</a>
+<a class="btn light" href="#contact" style="margin-top:8px">Talk with Sam</a>
+</aside>
+<main id="main">
+<!-- 1 -->
+<section aria-labelledby="h-opp" class="guide" id="opportunity">
+<p class="kicker">Section 1</p>
+<h2 id="h-opp">A client base hiding in plain sight</h2>
+<p class="lede">Early retirees may need help coordinating health coverage with retirement income. This creates an opportunity to provide useful annual guidance and prepare for Medicare.</p>
+<div class="grid3">
+<div class="box"><span class="stat">3×</span><p>Federal ACA age-rating rules generally allow a 64-year-old to be charged up to three times a 21-year-old's premium. States may impose tighter limits. Higher benchmark premiums can mean larger tax credits when otherwise eligible.</p></div>
+<div class="box"><span class="stat">1–10 yrs</span><p>A typical planning horizon for clients retiring at ages 55-64. Review coverage each Open Enrollment; individual Medicare eligibility dates can differ.</p></div>
+<div class="box"><span class="stat">Age 65</span><p>Most clients become eligible for Medicare at 65. Plan the transition individually; some qualify earlier or have different enrollment needs.</p></div>
+</div>
+<h3>Why they need an advisor, not a quote</h3>
+<ul>
+<li><strong>The enrollment rules aren't intuitive.</strong> Retiring doesn't create a Special Enrollment Period. Losing job-based coverage does.</li>
+<li><strong>Some income can be planned.</strong> Withdrawal sources, conversions and asset sales can affect MAGI. Pensions, Social Security, required distributions and investment payouts may limit flexibility.</li>
+<li><strong>The penalty for getting it wrong is large.</strong> The 400% FPL cliff and the end of repayment caps mean a single bad withdrawal can cost a household thousands in premium tax credits.</li>
+<li><strong>Coordination matters.</strong> Work with the client's financial planner and tax professional to connect coverage decisions with their broader retirement plan.</li>
+</ul>
+<p class="sources">Official sources: <a href="https://www.healthcare.gov/how-plans-set-your-premiums/">Age-rating rules</a> </p></section>
+<!-- 2 -->
+<section aria-labelledby="h-enr" class="guide" id="enrollment">
+<p class="kicker">Section 2</p>
+<h2 id="h-enr">Enrollment &amp; Special Enrollment Period rules</h2>
+<p>Outside Open Enrollment, a consumer generally needs a qualifying Special Enrollment Period (SEP). Retirement alone is not a qualifying event.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Situation</th><th>SEP?</th><th>What to tell the client</th></tr></thead>
+<tbody>
+<tr><td>Retiring (by itself)</td><td><span class="tag no">No</span></td><td>Retirement isn't a qualifying event. The <em>loss of coverage</em> that comes with it is.</td></tr>
+<tr><td>Losing job-based coverage at retirement</td><td><span class="tag yes">Yes</span></td><td>Loss of minimum essential coverage opens a 60-day window, and they can apply up to 60 days <em>before</em> the coverage ends. Plan the date so there's no gap.</td></tr>
+<tr><td>Spouse's employer coverage ends</td><td><span class="tag yes">Yes</span></td><td>Each person losing coverage qualifies, including dependents.</td></tr>
+<tr><td>Electing COBRA, then dropping it mid-year</td><td><span class="tag no">No</span></td><td>Voluntarily dropping COBRA does not itself create an SEP. Switching may still be possible within the original 60-day loss-of-coverage window, when employer COBRA contributions or government premium assistance end, or under another SEP. Otherwise, use Open Enrollment.</td></tr>
+<tr><td>COBRA runs out (exhaustion)</td><td><span class="tag yes">Yes</span></td><td>Reaching the end of the COBRA period counts as loss of coverage.</td></tr>
+<tr><td>Retiree health plan ends or employer drops it</td><td><span class="tag yes">Yes</span></td><td>Involuntary loss of retiree coverage qualifies.</td></tr>
+<tr><td>Moving to a new state or ZIP in retirement</td><td><span class="tag maybe">Often</span></td><td>A qualifying permanent move generally must provide access to new Marketplace plans, with qualifying coverage for at least one day in the prior 60 days. Exceptions apply, including certain moves from abroad; vacation or medical-treatment-only moves do not qualify.</td></tr>
+<tr><td>Open Enrollment</td><td><span class="tag yes">Anyone</span></td><td>No qualifying life event is needed, but ordinary Marketplace eligibility requirements still apply. Compare effective dates before ending COBRA.</td></tr>
+</tbody>
+</table></div>
+<h3>COBRA and retiree coverage: eligible vs. enrolled</h3>
+<p>Being <strong>eligible</strong> for COBRA or retiree coverage doesn't block the premium tax credit. Enrollment in qualifying COBRA or retiree coverage generally blocks the credit for that individual for the covered months; verify month-specific eligibility. Run the marketplace numbers before the client signs the COBRA election. COBRA often costs 102% of the full group premium, and a subsidized marketplace plan can come in far lower.</p>
+<div class="callout amber">
+<p><strong>The retirement-year trap:</strong> eligibility for the premium tax credit is based on <em>annual</em> household income. A client who retires in June still reports the January–June salary, PTO payout, severance and bonus for that year. Projected income for the retirement year may push them over the cliff even though their January income will be much lower. Compare COBRA for the rest of the first year with a marketplace plan starting January 1, then compare total cost, accumulated deductibles, networks, prescriptions and effective dates.</p>
+</div>
+<p class="sources">Official sources: <a href="https://www.healthcare.gov/retirees/">Retiree coverage</a> <a href="https://www.healthcare.gov/unemployed/cobra-coverage/">COBRA switching rules</a> <a href="https://www.cms.gov/files/document/special-enrollment-periods-march-2026.pdf">CMS SEP guidance</a> <a href="https://www.cms.gov/newsroom/fact-sheets/plan-year-2027-marketplace-plans-prices-fact-sheet-0">2027 enrollment dates</a> </p></section>
+<!-- 3 -->
+<section aria-labelledby="h-magi" class="guide" id="magi">
+<p class="kicker">Section 3</p>
+<h2 id="h-magi">What counts as MAGI, dollar for dollar</h2>
+<p>Marketplace subsidies are based on household Modified Adjusted Gross Income: AGI, plus tax-exempt interest, plus the <strong>non-taxable</strong> portion of Social Security, plus excluded foreign income. Count each income item once and confirm tax treatment with the client's tax professional.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Income source</th><th>Counts?</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Traditional IRA / 401(k) / 403(b) withdrawals</td><td><span class="tag no">Taxable part</span></td><td>Fully pretax distributions generally count in full. A return of after-tax basis does not; confirm the taxable amount.</td></tr>
+<tr><td>Roth conversions</td><td><span class="tag no">Taxable part</span></td><td>Only the taxable portion counts in the conversion year. After-tax basis and pro-rata rules can affect the amount. Do not count a conversion again as a separate withdrawal.</td></tr>
+<tr><td>Social Security benefits</td><td><span class="tag no">Yes, 100%</span></td><td>ACA MAGI adds back the non-taxable part, so the <em>whole</em> benefit counts, not just the taxable portion (up to 85%).</td></tr>
+<tr><td>Pensions and annuity payments</td><td><span class="tag no">Yes</span></td><td>Only the taxable portion counts. Return of after-tax basis doesn't.</td></tr>
+<tr><td>Wages / part-time employment</td><td><span class="tag no">Yes</span></td><td>Federal taxable wages count. Self-employment deductions do not apply to ordinary wages.</td></tr><tr><td>Self-employment / consulting</td><td><span class="tag no">Yes</span></td><td>Use net business income after allowable expenses. Deduct the allowable portion of self-employment tax once as an adjustment to income.</td></tr><tr><td>Other countable income</td><td><span class="tag no">Yes</span></td><td>Include unemployment compensation, net rental/royalty income and excluded foreign income, as applicable. This table is not exhaustive.</td></tr>
+<tr><td>Capital gains, dividends, interest</td><td><span class="tag no">Yes</span></td><td>Tax-exempt muni interest counts too. Only taxable gain counts, not the sale proceeds. Excluded principal-residence gain does not count; allowable losses may reduce AGI.</td></tr>
+<tr><td>Qualified Roth IRA / Roth 401(k) withdrawals</td><td><span class="tag yes">No</span></td><td>Tax-free and not part of MAGI, a key tool for managing income.</td></tr>
+<tr><td>Cash savings, return of principal</td><td><span class="tag yes">No</span></td><td>Spending from a checking or savings account doesn't create income.</td></tr>
+<tr><td>HSA qualified distributions</td><td><span class="tag yes">No</span></td><td>Tax-free when used for qualified medical expenses.</td></tr>
+<tr><td>Loan proceeds, reverse-mortgage draws, gifts</td><td><span class="tag yes">No</span></td><td>Not income.</td></tr>
+</tbody>
+</table></div>
+<p class="small">Household MAGI includes the tax filer, spouse, and any dependents required to file a return. Married couples generally must file jointly to claim the credit (limited exceptions apply).</p>
+<p class="sources">Official sources: <a href="https://www.healthcare.gov/income-and-household-information/income/">Marketplace income</a> <a href="https://www.irs.gov/publications/p590a">IRA basis and conversions</a> </p></section>
+<!-- 4 -->
+<section aria-labelledby="h-cliff" class="guide" id="cliff">
+<p class="kicker">Section 4</p>
+<h2 id="h-cliff">The 400% FPL subsidy cliff</h2>
+<p>The enhanced subsidies that removed the upper income cap expired at the end of 2025. For Plan Year 2027, households with income above 400% of the federal poverty level get <strong>no premium tax credit at all</strong>. For otherwise eligible households at 300%-400% FPL, the 2027 applicable percentage is <strong>10.22%</strong>; lower income bands use lower percentages. The credit depends on the benchmark premium, enrollment premium, eligible people and coverage months. Being below the cliff alone does not establish eligibility.</p>
+<div class="grid2">
+<div class="box">
+<h3>Illustrative couple, age 62 and 63</h3>
+<p>Benchmark silver premium: about <strong>$2,100/month</strong> ($25,200/yr).</p>
+<ul>
+<li><strong>MAGI $86,000</strong> (397% FPL): expected contribution of 10.22% = $8,789.20, so the tax credit is <strong>about $16,411</strong>.</li>
+<li><strong>MAGI $87,000</strong> (402% FPL): tax credit is <strong>$0</strong>.</li>
+</ul>
+<p class="small">An extra $1,000 of taxable income eliminates about $16,411 of credit in this illustration. Assumes both spouses qualify for all 12 months, no other disqualifying coverage, and an enrollment premium high enough to use the calculated credit. Premiums vary by ZIP code and plan.</p>
+</div>
+<div class="box">
+<h3>No more safety net at tax time</h3>
+<p>Starting with tax year 2026, the caps that limited how much excess advance credit a household had to repay are gone. If a client's actual income goes over the cliff, they repay <strong>every dollar</strong> of the advance credit when they file.</p>
+<p>Full repayment of excess advance credits also applies below 400% FPL. Check income and other eligibility changes mid-year and again in Q4.</p>
+</div>
+</div>
+<h3>The floor matters too</h3>
+<div class="callout">
+<p>Early retirees living on cash savings or Roth money can report income so <em>low</em> that it causes a different problem:</p>
+<ul>
+<li><strong>Medicaid uses a different income timing test.</strong> Expansion-adult eligibility is generally associated with 138% FPL, but usually uses current monthly income, state rules and other eligibility criteria. Using 2026 guidelines, the annualized amounts are about $22,025 single / $29,863 couple; these are reference amounts, not fixed 2027 Medicaid limits. Check the state's current thresholds. MAGI-based Medicaid has no asset test; other Medicaid categories can have different rules.</li>
+<li><strong>Below 100% FPL</strong> ($15,960 single / $21,640 couple for 2027 Marketplace calculations): households generally do not qualify for a premium tax credit and may face a coverage gap if not eligible for Medicaid or another program. Confirm any applicable exception with the Marketplace and tax professional.</li>
+</ul>
+</div>
+<p>A one-time gain or Roth conversion can change annual Marketplace MAGI without changing Medicaid eligibility for every month. Medicaid generally counts a lump sum in the month received, with state-specific rules for predictable income changes. Coordinate with the state agency before using an income strategy. Otherwise eligible households at or below 250% FPL may qualify for income-based cost-sharing reductions on Silver plans.</p>
+<p class="sources">Sources: <a href="https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines" rel="noopener noreferrer" target="_blank">HHS poverty guidelines</a><a href="https://www.irs.gov/affordable-care-act/individuals-and-families/the-premium-tax-credit-the-basics" rel="noopener noreferrer" target="_blank">IRS: Premium tax credit basics</a><a href="https://www.healthcare.gov/income-and-household-information/income/" rel="noopener noreferrer" target="_blank">HealthCare.gov: What to include as income</a></p>
+<p class="sources">Official sources: <a href="https://www.irs.gov/irb/2026-31_irb">2027 applicable percentages</a> <a href="https://www.irs.gov/affordable-care-act/individuals-and-families/questions-and-answers-on-the-premium-tax-credit">PTC eligibility and repayment</a> <a href="https://www.cms.gov/marketplace/technical-assistance-resources/training-materials/patient-protection-aca-basics.pdf">Medicaid income rules</a> </p></section>
+<!-- 5 -->
+<section aria-labelledby="h-calc" class="guide" id="calculator">
+<p class="kicker">Section 5</p>
+<h2 id="h-calc">MAGI &amp; cliff calculator</h2>
+<p>Enter projected 2027 annual amounts for the whole tax household. Sample amounts are prefilled for illustration. Calculations stay in your browser; inputs are not stored or submitted.</p>
+<form aria-describedby="calc-note" class="calc" id="calc">
+<h3>Household</h3><div class="calc-grid">
+<div class="field"><label for="hh">Tax household size</label><select id="hh"><option value="1">1</option><option selected="" value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option></select></div>
+<div class="field"><label for="region">Location</label><select id="region"><option value="us">48 states &amp; DC</option><option value="ak">Alaska</option><option value="hi">Hawaii</option></select></div></div>
+<h3>Projected annual household income</h3><div class="calc-grid"><div class="field"><label for="i-wages">Federal taxable wages<span class="hint"></span></label><input id="i-wages" inputmode="decimal" min="0" placeholder="0" step="0.01" type="number" value=""/></div><div class="field"><label for="i-se">Self-employment / consulting<span class="hint">Net of allowable business expenses; enter the SE tax deduction below.</span></label><input id="i-se" inputmode="decimal" placeholder="0" step="0.01" type="number" value=""/></div><div class="field"><label for="i-trad">Traditional IRA / 401(k) withdrawals<span class="hint">Taxable portion only; exclude conversions entered separately.</span></label><input id="i-trad" inputmode="decimal" min="0" placeholder="0" step="0.01" type="number" value="60000"/></div><div class="field"><label for="i-roth">Roth conversions<span class="hint">Taxable portion only; do not count again as a withdrawal.</span></label><input id="i-roth" inputmode="decimal" min="0" placeholder="0" step="0.01" type="number" value="25000"/></div><div class="field"><label for="i-ss">Social Security<span class="hint">Full benefit before deductions; exclude SSI.</span></label><input id="i-ss" inputmode="decimal" min="0" placeholder="0" step="0.01" type="number" value=""/></div><div class="field"><label for="i-pen">Pension / annuity<span class="hint">Taxable portion only.</span></label><input id="i-pen" inputmode="decimal" min="0" placeholder="0" step="0.01" type="number" value=""/></div><div class="field"><label for="i-inv">Investment income<span class="hint">Taxable gains, dividends and interest, plus tax-exempt interest. Use only allowable net losses.</span></label><input id="i-inv" inputmode="decimal" placeholder="0" step="0.01" type="number" value="4000"/></div><div class="field"><label for="i-other">Other countable income<span class="hint">Unemployment, net rental/royalty income, excluded foreign income and other MAGI items.</span></label><input id="i-other" inputmode="decimal" placeholder="0" step="0.01" type="number" value=""/></div></div>
+<h3>Deductions</h3><div class="calc-grid"><div class="field"><label for="i-hsa">Personal HSA deduction<span class="hint">Do not include employer/payroll amounts already excluded from wages.</span></label><input id="i-hsa" inputmode="decimal" min="0" placeholder="0" step="0.01" type="number" value=""/></div><div class="field"><label for="i-hsa-room">Confirmed personal HSA deduction allowance<span class="hint">For the tax year, after employer contributions and eligibility/proration adjustments. Confirm with the tax professional; required if claiming an HSA deduction.</span></label><input id="i-hsa-room" inputmode="decimal" min="0" placeholder="0" step="0.01" type="number" value=""/></div><div class="field"><label for="i-ded">Other allowable AGI adjustments<span class="hint">Deductible IRA, deductible SE tax, SE health insurance, etc. Count each once. SE health insurance and PTC interact; have the tax professional confirm.</span></label><input id="i-ded" inputmode="decimal" min="0" placeholder="0" step="0.01" type="number" value=""/></div><div class="field"><label>2027 HSA reference limits<span class="hint">$4,500 self-only / $9,000 shared family base; $1,000 catch-up per eligible spouse age 55+. Monthly eligibility, other coverage and Medicare affect the allowable deduction.</span></label><a href="#hsa">Review the HSA rules →</a></div></div>
+<h3>Optional premium illustration</h3><div class="calc-grid"><div class="field"><label for="i-bench">Monthly benchmark Silver premium<span class="hint">Use the second-lowest-cost Silver premium for only the people eligible for PTC.</span></label><input id="i-bench" inputmode="decimal" min="0" placeholder="0" step="0.01" type="number" value="2100"/></div><div class="field"><label for="i-enroll">Monthly selected-plan premium<span class="hint">PTC-eligible premium; omit to illustrate enrollment in the benchmark plan. Exclude nonessential benefits and tobacco surcharges.</span></label><input id="i-enroll" inputmode="decimal" min="0" placeholder="0" step="0.01" type="number" value=""/></div><div class="field"><label for="i-months">Eligible coverage months<span class="hint">Assumes the same eligible people and premiums in each selected month.</span></label><input id="i-months" max="12" min="1" step="1" type="number" value="12"/></div>
+<div class="field"><label>2027 applicable contribution rate<span class="hint">Calculated from the IRS income bands, not a flat rate for all incomes.</span></label><strong id="r-rate">10.22%</strong></div></div>
+<div aria-atomic="true" aria-live="polite" class="result"><div class="result-top">
+<div><span>Projected MAGI</span><strong id="r-magi">$0</strong></div><div><span>% of FPL</span><strong id="r-fpl">0%</strong></div><div><span>400% cliff</span><strong id="r-cliff">$0</strong></div></div>
+<div aria-hidden="true" class="meter"><div class="zone-over"></div><div class="pin" id="r-pin" style="left:0"></div></div><div aria-hidden="true" class="meter-labels"><span>0%</span><span>100%</span><span>200%</span><span>300%</span><span>400%</span><span>500%</span></div><div class="verdict" id="r-verdict"></div></div>
+<p class="small" id="calc-note" style="margin:14px 0 0">Educational illustration, not an eligibility decision or tax return calculation. Uses the 2026 HHS guidelines for 2027 Marketplace coverage and IRS Revenue Procedure 2026-26. Annual household income applies even for partial-year coverage. Final PTC is calculated month by month and capped by eligible enrollment premiums. This tool does not determine Medicaid, employer-coverage, immigration, tax-filing or other eligibility, and does not calculate your HSA allowance. Medicaid generally uses current monthly income and current state rules. Confirm all inputs with the Marketplace and tax professional.</p>
+<p class="sources"><a href="https://www.irs.gov/irb/2026-31_irb">IRS 2027 contribution table</a><a href="https://www.irs.gov/publications/p974">PTC calculation and eligibility</a></p>
+</form>
+</section>
+<!-- 6 -->
+<section aria-labelledby="h-lev" class="guide" id="levers">
+<p class="kicker">Section 6</p>
+<h2 id="h-lev">Levers that pull clients back under the cliff</h2>
+<p>You aren't the tax preparer, but you should know which levers exist so you can bring them up and coordinate with the client's financial advisor or CPA.</p>
+<div class="grid2">
+<div class="box"><h3>1. Mix the withdrawal sources</h3><p>Fund living expenses from a combination of cash, taxable brokerage principal, and Roth money so only part of each year's spending counts as MAGI. Only the gain on a taxable sale counts, not the whole sale.</p></div>
+<div class="box"><h3>2. Right-size Roth conversions</h3><p>Coordinate the taxable conversion amount with the tax professional and leave room for unexpected income. Roth conversions cannot be recharacterized. Reviewing the full-year projection before a conversion can help avoid crossing the cliff.</p></div>
+<div class="box"><h3>3. Time Social Security</h3><p>Delaying Social Security can lower pre-Medicare MAGI and generally increase the monthly retirement benefit, up to age 70. Total lifetime benefits depend on longevity, household needs and other circumstances; compare the full retirement plan.</p></div>
+<div class="box"><h3>4. Use HSA contributions</h3><p>An above-the-line deduction that, unlike a traditional IRA contribution, <strong>doesn't require earned income</strong>. See the next section.</p></div>
+<div class="box"><h3>5. Bunch big events</h3><p>Model the tax and coverage effects before timing a large withdrawal, conversion or asset sale. Only taxable home-sale gain affects MAGI: qualifying principal-residence gain may be excluded up to $250,000, or $500,000 for qualifying joint filers. Income after Medicare starts may increase later IRMAA premiums and affect a younger spouse's Marketplace credit.</p></div>
+<div class="box"><h3>6. Harvest gains on purpose</h3><p>Realizing taxable gains can raise annual MAGI and reset cost basis, but does not guarantee Marketplace eligibility or end Medicaid eligibility for all months. Review monthly Medicaid rules, taxes and the overall investment plan first.</p></div>
+</div>
+<div class="callout green"><p><strong>Your talking point:</strong> “Your financial advisor plans how much income you take each year. I help evaluate how those numbers affect your coverage options and potential tax credit. Let's get all three of us on the same page before you take your next withdrawal.”</p></div>
+<p class="sources">Official sources: <a href="https://www.ssa.gov/benefits/retirement/planner/delayret.html">Social Security timing</a> <a href="https://www.irs.gov/taxtopics/tc701">Home-sale exclusions</a> <a href="https://www.irs.gov/retirement-plans/retirement-plans-faqs-regarding-iras">Roth conversion rules</a> </p></section>
+<!-- 7 -->
+<section aria-labelledby="h-hsa" class="guide" id="hsa">
+<p class="kicker">Section 7</p>
+<h2 id="h-hsa">The HSA play</h2>
+<p class="lede">Pairing an HSA-qualified plan with HSA contributions is one of the few ways a retiree can <em>lower</em> MAGI after the income is already earned.</p>
+<ol class="steps">
+<li><strong>Enroll in an HSA-qualified plan.</strong> Starting in 2026, marketplace <strong>Bronze and Catastrophic</strong> plans count as HSA-compatible under federal law, along with any plan the carrier designates as an HSA-qualified HDHP. That gives you many more options than before.</li>
+<li><strong>Open an HSA.</strong> Any HSA custodian works. It doesn't have to be tied to an employer. A spouse 55+ who wants the catch-up needs their own HSA.</li>
+<li><strong>Contribute up to the 2027 limit.</strong> $4,500 self-only / $9,000 family, plus $1,000 for each eligible person 55 or older. A couple with both spouses age 55+ and full-year HSA eligibility under family coverage can contribute up to <strong>$11,000 combined</strong>. The $9,000 base limit is shared; each catch-up goes to its owner's HSA. Employer contributions reduce the remaining room.</li>
+<li><strong>Lower MAGI dollar for dollar.</strong> An allowable personal contribution is an above-the-line deduction and requires no earned income. Employer and pretax payroll contributions are already excluded from income and cannot be deducted again. An IRA-to-HSA qualified funding distribution is not a separate deduction.</li>
+<li><strong>Make the final decision after year-end.</strong> An allowable contribution designated for 2027 can generally be made until the regular 2027 federal return filing deadline in April 2028, without extensions. It must fit the remaining 2027 limit. Enrolling in an eligible plan in 2028 does not create 2027 eligibility. A qualifying deduction may bring final MAGI back to or below the cliff.</li>
+</ol>
+<div class="callout amber">
+<p><strong>HSA guardrails to review with the client:</strong></p>
+<ul>
+<li>Eligibility generally requires qualifying coverage on the first day of the month, no disqualifying additional coverage, no Medicare enrollment and not being claimable as another taxpayer's dependent. A general-purpose FSA (including a spouse's FSA covering the client) or HRA can disqualify contributions. Confirm permitted exceptions. Limits generally follow eligible months; the last-month rule has a testing period.</li>
+<li>Medicare-covered months do not create HSA contribution eligibility. Part A can be retroactive up to six months, but not before initial Medicare eligibility; Social Security enrollment at or after 65 can trigger Part A. Plan contributions around the effective date, not just the application date. Contributions allocated to earlier eligible months can still be made by the applicable deadline.</li>
+<li>Funds already in the HSA can be used tax-free for qualified expenses for life, including qualifying Medicare premiums (not Medigap) once the HSA owner is 65 or older. Ordinary Marketplace premiums generally are not qualified HSA expenses; limited exceptions include certain coverage while receiving unemployment compensation.</li>
+<li>Compare total cost: a lower premium and the tax savings against a higher deductible. A Silver plan with cost-sharing reductions may still be the better fit for lower-income households.</li>
+</ul>
+</div>
+<div class="callout"><p><strong>Catastrophic does not mean subsidized.</strong> Catastrophic plans cannot receive premium tax credits. People age 30 or older need an applicable hardship or affordability exemption. Compare an eligible Bronze or Silver plan before choosing Catastrophic coverage.</p></div>
+<p class="sources">Sources: <a href="https://www.irs.gov/irb/2026-25_irb">IRS: 2027 HSA limits</a><a href="https://www.irs.gov/irb/2026-02_IRB">IRS: Bronze and Catastrophic HSA guidance</a><a href="https://www.healthcare.gov/choose-a-plan/catastrophic-health-plans/">Catastrophic eligibility</a><a href="https://www.irs.gov/publications/p969" rel="noopener noreferrer" target="_blank">IRS Publication 969</a><a href="https://www.healthcare.gov/high-deductible-health-plan/" rel="noopener noreferrer" target="_blank">HealthCare.gov: HSA-eligible plans</a></p>
+</section>
+<!-- 8 -->
+<section aria-labelledby="h-med" class="guide" id="medicare">
+<p class="kicker">Section 8</p>
+<h2 id="h-med">The Medicare handoff: a client for life</h2>
+<p>The pre-65 relationship has a natural next step. Map it out from the first meeting so the client knows you'll be with them at 65.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>When</th><th>What you do</th></tr></thead>
+<tbody>
+<tr><td>Age 63</td><td>Bring up IRMAA. Part B and D premiums generally use tax information from <strong>two years earlier</strong>. IRMAA MAGI is AGI plus tax-exempt interest, unlike ACA MAGI. Large taxable conversions can raise later premiums. A qualifying life-changing event, such as retirement with reduced income, may support a request for a new determination.</td></tr>
+<tr><td>3 months before 65</td><td>The usual seven-month Initial Enrollment Period begins three months before the 65th-birthday month. Confirm the individual start date, including first-of-month birthday rules, current-employment coverage and any earlier Medicare eligibility. Review Parts A/B, Medigap, Medicare Advantage and Part D.</td></tr>
+<tr><td>Medicare start month</td><td>Premium-free Part A eligibility generally ends eligibility for Marketplace premium assistance, subject to IRS timing rules. <strong>Update the Marketplace application and coordinate termination</strong> for the transitioning spouse with Medicare's start date; coverage does not end automatically. Do not assume every retroactive overlap requires repayment: IRS government-coverage timing exceptions may apply.</td></tr>
+<tr><td>Younger spouse</td><td>May stay on Marketplace coverage if otherwise eligible. Update who needs coverage, while keeping the full tax household and both spouses' countable income on the application. Recalculate premiums and assistance; the Medicare spouse does not disappear from the tax household.</td></tr>
+</tbody>
+</table></div>
+<div class="callout green"><p>Also look at your existing Medicare book. Medicare clients with a <strong>spouse under 65</strong> who's retiring are pre-65 prospects you already have a relationship with.</p></div>
+<p class="sources">Official sources: <a href="https://www.healthcare.gov/medicare/medicare-and-the-marketplace/">Marketplace to Medicare</a> <a href="https://www.irs.gov/publications/p974">IRS timing exceptions</a> <a href="https://secure.ssa.gov/poms.nsf/lnx/0601101010">IRMAA definition</a> <a href="https://www.medicare.gov/basics/get-started-with-medicare/sign-up/when-can-i-sign-up-for-medicare">Medicare enrollment</a> </p></section>
+<!-- 9 -->
+<section aria-labelledby="h-blue" class="guide" id="blueprint">
+<p class="kicker">Section 9</p>
+<h2 id="h-blue">The blueprint: find, close and keep</h2>
+<h3>Where to find pre-65 retirees</h3>
+<div class="grid2">
+<div class="box"><h3>Referral partners</h3><ul><li>Fee-only financial planners and RIAs</li><li>CPAs and enrolled agents (especially Q4 tax planning)</li><li>Estate-planning attorneys</li><li>Retirement-income and annuity specialists</li></ul></div>
+<div class="box"><h3>Your own book</h3><ul><li>Younger spouses of Medicare clients</li><li>Individual clients turning 55–64</li><li>Life, annuity and P&amp;C clients near retirement</li><li>Past COBRA quotes that never converted</li></ul></div>
+<div class="box"><h3>Life events</h3><ul><li>Early-retirement and voluntary separation packages</li><li>Layoffs and plant closings (public WARN notices)</li><li>Retiring teachers, public-safety and municipal employees whose retiree coverage is limited or ends</li><li>Business owners selling a company</li></ul></div>
+<div class="box"><h3>Content &amp; community</h3><ul><li>Short videos on the cliff and SEP myths</li><li>“Retiring before 65?” workshops at libraries and community centers</li><li>LinkedIn posts aimed at people 55–64 and their advisors</li><li>Co-hosted webinars with a financial planner</li></ul></div>
+</div>
+<h3>The discovery conversation</h3>
+<ol>
+<li>When does your employer coverage end, and is there a retiree plan or COBRA offer?</li>
+<li>Who's in your tax household, and when does each person turn 65?</li>
+<li>What income will you have this year and next year: pension, Social Security, withdrawals, consulting, investment income?</li>
+<li>Is a Roth conversion, home sale or large withdrawal planned in the next few years?</li>
+<li>Which doctors, hospitals and prescriptions must stay in network?</li>
+<li>Who is your financial advisor or CPA, and may I coordinate with them?</li>
+</ol>
+<h3>A talk track that positions you as the advisor</h3>
+<div class="quote"><p>“Most people don't realize that retiring doesn't give you a special enrollment period, but losing your work coverage does. And because your subsidy is based on your <em>annual household</em> income, a single large IRA withdrawal or Roth conversion can cost you thousands. My role is to compare your coverage options, coordinate with your tax and financial professionals, and help you prepare for Medicare.”</p></div>
+<h3>Annual service calendar</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>When</th><th>Touchpoint</th></tr></thead>
+<tbody>
+<tr><td>Nov – Jan (Open Enrollment)</td><td>Re-project next year's MAGI, re-shop plans, confirm networks and drug lists, and decide on an HSA plan.</td></tr>
+<tr><td>Feb – Apr (tax season)</td><td>Remind clients to reconcile on Form 8962 with Form 1095-A, and coordinate any prior-year HSA contribution with their CPA.</td></tr>
+<tr><td>Mid-year</td><td>Income check-in. Report changes to the Marketplace promptly so advance credits stay accurate.</td></tr>
+<tr><td>September – October</td><td>Q4 planning call with the client and their financial advisor before any conversion or harvesting.</td></tr>
+<tr><td>Birthdays 63 &amp; 64</td><td>Start the IRMAA and Medicare conversation.</td></tr>
+</tbody>
+</table></div>
+</section>
+<!-- 10 -->
+<section aria-labelledby="h-comp" class="guide" id="compliance">
+<p class="kicker">Section 10</p>
+<h2 id="h-comp">Compliance guardrails</h2>
+<ul class="check">
+<li>Complete Plan Year 2027 Marketplace registration and training before you enroll anyone. See the <a href="../">ACA Certification Hub</a> for federal and state requirements.</li>
+<li>Document consumer consent before providing assistance and separately document the consumer's review and confirmation of application accuracy before submission. For the federal Marketplace, retain both records for at least <strong>10 years</strong> and provide them to CMS on request, including after the client relationship ends. Follow applicable state requirements too.</li>
+<li>Use the client's own good-faith income projection. You can explain what counts as income, but the client attests to the number.</li>
+<li>Stay in your lane on tax and investment advice. Explain how the rules work, and send specific tax, withdrawal and conversion decisions to a CPA, enrolled agent or licensed financial professional.</li>
+<li>Follow your state's insurance department rules and each carrier's marketing guidelines for ads, social posts and seminars.</li>
+</ul>
+<p class="sources">Official sources: <a href="https://www.cms.gov/marketplace/agents-brokers/files/frequently-asked-questions-consumer-consent-application-review-requirements.pdf">Consent and application-review requirements</a> <a href="https://www.cms.gov/marketplace/agents-brokers/registration-training">2027 registration and training</a> </p></section>
+<!-- 11 -->
+<section aria-labelledby="h-faq" class="guide" id="faq">
+<p class="kicker">Section 11</p>
+<h2 id="h-faq">Frequently asked questions</h2>
+<details><summary>Does a big 401(k) balance disqualify someone from subsidies?</summary><div class="body"><p>No. Marketplace subsidies look at income, not assets. A household with a large balance may qualify when income and all other eligibility requirements are met. Only the taxable portion of withdrawals counts; the upper income limit is at or below 400% FPL.</p></div></details>
+<details><summary>Does income from the year before retirement matter?</summary><div class="body"><p>The Marketplace uses projected income for the coverage year. The retirement year itself includes any wages earned before retiring, which is why the first partial year often needs separate planning.</p></div></details>
+<details><summary>What if a client's income comes in higher than projected?</summary><div class="body"><p>They reconcile on Form 8962. Starting with tax year 2026, there's no cap on repaying excess advance credits. Clients near the cliff should report income changes during the year, and may be able to use a deductible HSA contribution before filing.</p></div></details>
+<details><summary>Can a client take less advance credit to be safe?</summary><div class="body"><p>Yes. Clients can choose to take only part of the credit in advance and claim the rest at tax time. That can be a sensible cushion for retirees whose income is uncertain.</p></div></details>
+<details><summary>Are tax-free Roth withdrawals really excluded?</summary><div class="body"><p>Qualified Roth distributions aren't included in AGI and aren't added back for ACA MAGI. Non-qualified distributions of earnings can be taxable, so confirm the client's Roth holding period and age with their tax advisor.</p></div></details>
+<details><summary>Are the enhanced subsidies coming back?</summary><div class="body"><p>As of this guide's review date, the enhanced credits have expired and the 400% FPL limit is back for Plan Year 2027. Congress could change that. Check current law before quoting. The IRS has published the 2027 applicable-percentage table; the maximum rate used here is 10.22%.</p></div></details>
+</section>
+<section aria-labelledby="h-contact" class="contact" id="contact">
+<p class="kicker">Let's talk</p>
+<h2 id="h-contact">Want help building your pre-65 practice?</h2>
+<p>Whether you're working your first early-retiree case or building a referral program with local financial advisors, Pinnacle can help with contracting, certification and case strategy.</p>
+<p class="name">Sam Tripp</p>
+<p>Sales Director – ACA · Pinnacle Financial Services<br/>
+<a href="mailto:Samuel.Tripp@pfsinsurance.com">Samuel.Tripp@pfsinsurance.com</a><br/>
+<a href="tel:+18007726881,7721">(800) 772-6881 ext. 7721</a></p>
+<p style="margin:18px 0 0"><a class="btn" download="" href="Pre-65-ACA-Strategy-Guide-PY2027.pdf" style="color:#fff">Download the PDF guide &amp; client worksheet</a></p>
+</section>
+</main>
+</div>
 <footer>
-  <div class="wrap">
-    <p><strong>Pre-65 ACA Strategy Guide</strong> &middot; Plan Year 2027 &middot; Reviewed November 10, 2026</p>
-    <p>For licensed insurance agents and brokers. This guide is educational and isn't tax, legal or investment advice. Figures are based on federal rules for HealthCare.gov states as of the review date, and state-based marketplaces and state laws may differ. Examples are illustrative. Clients should confirm tax decisions with a qualified tax professional. Not affiliated with or endorsed by any government agency.</p>
-    <p><a href="#">Back to top &uarr;</a> &middot; <a href="../">ACA Certification Hub</a></p>
-  </div>
+<div class="wrap">
+<p><strong>Pre-65 ACA Strategy Guide</strong> · Plan Year 2027 · Reviewed November 13, 2026</p>
+<p>For licensed insurance agents and brokers. This guide is educational and isn't tax, legal or investment advice. Figures are based on federal rules for HealthCare.gov states as of the review date, and state-based marketplaces and state laws may differ. Examples are illustrative. Clients should confirm tax decisions with a qualified tax professional. Not affiliated with or endorsed by any government agency.</p>
+<p><a href="#">Back to top ↑</a> · <a href="../">ACA Certification Hub</a></p>
+</div>
 </footer>
 
-<script>
-(function(){
-  var FPL={us:[15960,5680],ak:[19950,7100],hi:[18360,6530]};
-  var $=function(id){return document.getElementById(id)};
-  var ids=['hh','region','i-wages','i-trad','i-roth','i-ss','i-pen','i-inv','i-hsa','i-ded','i-bench','i-pct'];
-  var money=function(n){return (n<0?'-':'')+'$'+Math.round(Math.abs(n)).toLocaleString('en-US')};
-  var num=function(id){var v=parseFloat($(id).value);return isFinite(v)&&v>0?v:0};
-  function calc(){
-    var size=parseInt($('hh').value,10)||1, g=FPL[$('region').value]||FPL.us;
-    var fpl=g[0]+g[1]*(size-1);
-    var gross=num('i-wages')+num('i-trad')+num('i-roth')+num('i-ss')+num('i-pen')+num('i-inv');
-    var magi=Math.max(0,gross-num('i-hsa')-num('i-ded'));
-    var pct=magi/fpl*100, cliff=fpl*4, head=cliff-magi;
-    var bench=num('i-bench')*12, rate=num('i-pct')/100;
-    $('r-magi').textContent=money(magi);
-    $('r-fpl').textContent=Math.round(pct)+'%';
-    $('r-cliff').textContent=money(cliff);
-    $('r-pin').style.left=Math.min(100,pct/5)+'%';
-    var v=$('r-verdict'), credit=bench?Math.max(0,bench-rate*magi):0, msg, cls;
-    var creditAtCliff=bench?Math.max(0,bench-rate*cliff):0;
-    if(pct<100){cls='low';msg='<strong>Below 100% FPL.</strong> No premium tax credit in a non-expansion state (coverage gap). In an expansion state they are likely Medicaid-eligible. To land in the subsidy range, consider adding about <strong>'+money(fpl*1.38-magi)+'</strong> of income (expansion state, 138%) or <strong>'+money(fpl-magi)+'</strong> (non-expansion, 100%).';}
-    else if(pct<138){cls='low';msg='<strong>'+Math.round(pct)+'% FPL.</strong> In a Medicaid-expansion state this household is likely Medicaid-eligible, not subsidy-eligible. About <strong>'+money(fpl*1.38-magi)+'</strong> more income would move them to 138%. In a non-expansion state they likely qualify for a large credit and strong cost-sharing reductions.';}
-    else if(pct<=400){
-      cls=head<5000?'warn':'ok';
-      msg='<strong>Under the cliff with '+money(head)+' of headroom.</strong> ';
-      if(pct<=250)msg+='At or below 250% FPL, they may also qualify for cost-sharing reductions on a Silver plan. ';
-      if(bench&&pct>=300)msg+='Estimated annual tax credit: about <strong>'+money(credit)+'</strong>. ';
-      if(head<5000)msg+='That margin is thin. One unplanned withdrawal or capital-gain distribution could cost the full credit.';
-      else msg+='Any additional withdrawal or conversion this year should stay under '+money(head)+'.';
-    } else {
-      cls='bad';
-      var over=magi-cliff+1;
-      msg='<strong>Over the cliff by '+money(magi-cliff)+'.</strong> No premium tax credit at this income. ';
-      if(bench&&creditAtCliff>0)msg+='Just under the line, the credit would be worth roughly <strong>'+money(creditAtCliff)+'</strong> a year. ';
-      msg+='To get back under, reduce MAGI by at least <strong>'+money(over)+'</strong>: a smaller Roth conversion, Roth or cash withdrawals instead of pre-tax money, or HSA contributions';
-      msg+=(over<=11000?' (that amount may be within reach with an HSA plus catch-up).':'.');
-    }
-    v.className='verdict '+cls; v.innerHTML=msg;
-  }
-  ids.forEach(function(id){var el=$(id);el.addEventListener('input',calc);el.addEventListener('change',calc)});
-  calc();
-
-  var pb=$('print-guide');
-  if(pb)pb.addEventListener('click',function(){
-    var d=[].slice.call(document.querySelectorAll('details')),st=d.map(function(x){return x.open});
-    d.forEach(function(x){x.open=true});window.print();d.forEach(function(x,i){x.open=st[i]});
-  });
-
-  var links=[].slice.call(document.querySelectorAll('.rail nav a'));
-  if('IntersectionObserver' in window){
-    var ob=new IntersectionObserver(function(es){
-      var s=es.find(function(e){return e.isIntersecting});
-      if(s)links.forEach(function(a){var on=a.hash==='#'+s.target.id;a.classList.toggle('active',on);on?a.setAttribute('aria-current','location'):a.removeAttribute('aria-current')});
-    },{rootMargin:'-10% 0px -65% 0px'});
-    document.querySelectorAll('section.guide').forEach(function(s){ob.observe(s)});
-  }
-})();
-</script>
-</body>
+<script defer="" src="calculator.js"></script></body>
 </html>
