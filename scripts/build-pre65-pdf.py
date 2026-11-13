@@ -57,6 +57,8 @@ def table(rows,widths,header=True):
 def flow(n):
     if isinstance(n,NavigableString): return []
     name=n.name
+    # Web-only summaries duplicate the detailed content already included in the PDF.
+    if set(n.get('class',[])) & {'takeaway','transition-timeline'}: return []
     if 'kicker' in n.get('class',[]) or name in ('script','form'): return []
     if name=='h2': return [para(inline(n),'TitleGuide')]
     if name in ('h3','summary'): return [para(inline(n),'SubGuide')]

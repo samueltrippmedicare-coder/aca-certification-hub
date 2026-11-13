@@ -186,6 +186,44 @@ footer p{max-width:900px}
   .contact{background:#fff;color:#000;border:1px solid #999}
   .contact h2,.contact .name,.contact a{color:#000}
 }
+
+/* Scannable section introductions */
+.takeaway{background:#f5f6f8;border:1px solid #e3e6eb;border-left:4px solid var(--crimson);border-radius:0 10px 10px 0;padding:20px 22px;margin:0 0 26px}
+.takeaway .takeaway-label{font:700 10px/1.4 var(--heading);letter-spacing:1.6px;text-transform:uppercase;color:var(--crimson);margin:0 0 7px}
+.takeaway h3{font-size:18px;line-height:1.35;margin:0 0 8px;color:var(--ink)}
+.takeaway p:last-child{font-size:14px;line-height:1.65;margin:0;color:#505761}
+/* A vertical timeline keeps all five milestones readable on small screens. */
+.transition-timeline{background:#faf9f7;border:1px solid var(--line);border-radius:14px;padding:28px;margin:28px 0}
+.transition-timeline > h3{font-size:24px;margin:0 0 26px}
+.timeline-steps{list-style:none;margin:0;padding:0}
+.timeline-steps > li{position:relative;display:grid;grid-template-columns:42px minmax(0,1fr);gap:18px;margin:0;padding:0 0 24px}
+.timeline-steps > li:not(:last-child)::after{content:'';position:absolute;left:20px;top:43px;bottom:0;width:2px;background:#e7c9d1}
+.timeline-steps > li:last-child{padding-bottom:0}
+.timeline-number{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:white;border:1px solid #deb1bd;color:var(--crimson);font:700 13px var(--heading)}
+.timeline-when{font:700 11px/1.5 var(--heading);letter-spacing:.65px;text-transform:uppercase;color:var(--crimson);margin:0 0 5px}
+.timeline-steps h4{font-size:18px;line-height:1.35;margin:0 0 7px}
+.timeline-steps p:last-child{font-size:14px;line-height:1.65;color:#505761;margin:0}
+.timeline-note{border-top:1px solid var(--line);padding-top:16px;margin:22px 0 0;font-size:12px;line-height:1.7;color:var(--muted)}
+/* Native details provides a keyboard-accessible mobile contents menu. */
+.contents-menu{border:0;background:transparent;margin:0}
+.contents-menu > summary{display:none}
+@media(max-width:980px){
+  .rail{padding:0}
+  .contents-desktop-title{display:none}
+  .contents-menu > summary{display:flex;align-items:center;justify-content:flex-start;gap:10px;padding:17px 18px;font:700 15px/1.4 var(--heading);color:var(--ink)}
+  .contents-menu > summary::after{content:'+';margin-left:auto;color:var(--crimson);font-size:23px}
+  .contents-menu[open] > summary::after{content:'−'}
+  .contents-hint{font:400 12px var(--body);color:var(--muted)}
+  .contents-panel{padding:0 14px 14px;border-top:1px solid var(--line)}
+  .contents-panel nav{padding-top:10px}
+}
+@media(max-width:680px){
+  .takeaway{padding:17px 18px;margin-bottom:22px}
+  .transition-timeline{padding:21px 18px}
+  .transition-timeline > h3{font-size:22px}
+  .timeline-steps > li{gap:13px}
+}
+@media print{.takeaway,.transition-timeline{break-inside:avoid}.timeline-steps > li{break-inside:avoid}}
 </style>
 </head>
 <body>
@@ -221,8 +259,8 @@ footer p{max-width:900px}
 </section>
 <div class="strip"><div class="wrap"><p><strong>2027 Open Enrollment.</strong> HealthCare.gov runs November 1, 2026 – January 15, 2027. Enroll by December 15 for a January 1 start. State-based marketplaces set their own deadlines, so check yours.</p></div></div>
 <div class="wrap layout">
-<aside aria-label="Guide contents" class="rail">
-<h2>In this guide</h2>
+<aside aria-label="Guide contents" class="rail"><h2 class="contents-desktop-title">In this guide</h2><details class="contents-menu" open=""><summary>In this guide<span class="contents-hint">Browse topics</span></summary><div class="contents-panel">
+
 <nav>
 <a href="#opportunity">1. The opportunity</a>
 <a href="#enrollment">2. Enrollment &amp; SEP rules</a>
@@ -238,7 +276,7 @@ footer p{max-width:900px}
 </nav>
 <a class="btn" download="" href="Pre-65-ACA-Strategy-Guide-PY2027.pdf">Download PDF</a>
 <a class="btn light" href="#contact" style="margin-top:8px">Talk with Sam</a>
-</aside>
+</div></details></aside>
 <main id="main">
 <!-- 1 -->
 <section aria-labelledby="h-opp" class="guide" id="opportunity">
@@ -261,7 +299,7 @@ footer p{max-width:900px}
 <!-- 2 -->
 <section aria-labelledby="h-enr" class="guide" id="enrollment">
 <p class="kicker">Section 2</p>
-<h2 id="h-enr">Enrollment &amp; Special Enrollment Period rules</h2>
+<h2 id="h-enr">Enrollment &amp; Special Enrollment Period rules</h2><aside aria-label="Quick takeaway" class="takeaway"><p class="takeaway-label">Quick takeaway</p><h3>Start with the coverage end date</h3><p>Retirement alone does not create an enrollment window. Check the loss-of-coverage date, COBRA exceptions and the new plan's effective date.</p></aside>
 <p>Outside Open Enrollment, a consumer generally needs a qualifying Special Enrollment Period (SEP). Retirement alone is not a qualifying event.</p>
 <div class="table-wrap"><table>
 <thead><tr><th>Situation</th><th>SEP?</th><th>What to tell the client</th></tr></thead>
@@ -285,7 +323,7 @@ footer p{max-width:900px}
 <!-- 3 -->
 <section aria-labelledby="h-magi" class="guide" id="magi">
 <p class="kicker">Section 3</p>
-<h2 id="h-magi">What counts as MAGI, dollar for dollar</h2>
+<h2 id="h-magi">What counts as MAGI, dollar for dollar</h2><aside aria-label="Quick takeaway" class="takeaway"><p class="takeaway-label">Quick takeaway</p><h3>Count taxable income once</h3><p>Use the full year and full tax household. Count only taxable withdrawals and conversions, and include Social Security and tax-exempt interest.</p></aside>
 <p>Marketplace subsidies are based on household Modified Adjusted Gross Income: AGI, plus tax-exempt interest, plus the <strong>non-taxable</strong> portion of Social Security, plus excluded foreign income. Count each income item once and confirm tax treatment with the client's tax professional.</p>
 <div class="table-wrap"><table>
 <thead><tr><th>Income source</th><th>Counts?</th><th>Notes</th></tr></thead>
@@ -307,7 +345,7 @@ footer p{max-width:900px}
 <!-- 4 -->
 <section aria-labelledby="h-cliff" class="guide" id="cliff">
 <p class="kicker">Section 4</p>
-<h2 id="h-cliff">The 400% FPL subsidy cliff</h2>
+<h2 id="h-cliff">The 400% FPL subsidy cliff</h2><aside aria-label="Quick takeaway" class="takeaway"><p class="takeaway-label">Quick takeaway</p><h3>Leave room below the cliff</h3><p>For 2027, the 400% FPL limit is $63,840 for one person or $86,560 for two in the 48 states and DC. Income is only one part of eligibility.</p></aside>
 <p>The enhanced subsidies that removed the upper income cap expired at the end of 2025. For Plan Year 2027, households with income above 400% of the federal poverty level get <strong>no premium tax credit at all</strong>. For otherwise eligible households at 300%-400% FPL, the 2027 applicable percentage is <strong>10.22%</strong>; lower income bands use lower percentages. The credit depends on the benchmark premium, enrollment premium, eligible people and coverage months. Being below the cliff alone does not establish eligibility.</p>
 <div class="grid2">
 <div class="box">
@@ -339,7 +377,7 @@ footer p{max-width:900px}
 <!-- 5 -->
 <section aria-labelledby="h-calc" class="guide" id="calculator">
 <p class="kicker">Section 5</p>
-<h2 id="h-calc">MAGI &amp; cliff calculator</h2>
+<h2 id="h-calc">MAGI &amp; cliff calculator</h2><aside aria-label="Quick takeaway" class="takeaway"><p class="takeaway-label">Quick takeaway</p><h3>Annual income, even for part-year coverage</h3><p>Enter all countable annual income, confirm allowable deductions, then select the eligible coverage months. The result is an illustration, not an eligibility decision.</p></aside>
 <p>Enter projected 2027 annual amounts for the whole tax household. Sample amounts are prefilled for illustration. Calculations stay in your browser; inputs are not stored or submitted.</p>
 <form aria-describedby="calc-note" class="calc" id="calc">
 <h3>Household</h3><div class="calc-grid">
@@ -359,7 +397,7 @@ footer p{max-width:900px}
 <!-- 6 -->
 <section aria-labelledby="h-lev" class="guide" id="levers">
 <p class="kicker">Section 6</p>
-<h2 id="h-lev">Levers that pull clients back under the cliff</h2>
+<h2 id="h-lev">Levers that pull clients back under the cliff</h2><aside aria-label="Quick takeaway" class="takeaway"><p class="takeaway-label">Quick takeaway</p><h3>Coordinate before moving money</h3><p>Review withdrawals, conversions and gains with the client's tax and financial professionals. Consider Medicaid timing, later IRMAA and the younger spouse's coverage.</p></aside>
 <p>You aren't the tax preparer, but you should know which levers exist so you can bring them up and coordinate with the client's financial advisor or CPA.</p>
 <div class="grid2">
 <div class="box"><h3>1. Mix the withdrawal sources</h3><p>Fund living expenses from a combination of cash, taxable brokerage principal, and Roth money so only part of each year's spending counts as MAGI. Only the gain on a taxable sale counts, not the whole sale.</p></div>
@@ -374,7 +412,7 @@ footer p{max-width:900px}
 <!-- 7 -->
 <section aria-labelledby="h-hsa" class="guide" id="hsa">
 <p class="kicker">Section 7</p>
-<h2 id="h-hsa">The HSA play</h2>
+<h2 id="h-hsa">The HSA play</h2><aside aria-label="Quick takeaway" class="takeaway"><p class="takeaway-label">Quick takeaway</p><h3>An eligible plan is only the first step</h3><p>Check other coverage, Medicare dates and unused contribution room before claiming a deduction. Catastrophic plans cannot receive premium tax credits.</p></aside>
 <p class="lede">Pairing an HSA-qualified plan with HSA contributions is one of the few ways a retiree can <em>lower</em> MAGI after the income is already earned.</p>
 <ol class="steps">
 <li><strong>Enroll in an HSA-qualified plan.</strong> Starting in 2026, marketplace <strong>Bronze and Catastrophic</strong> plans count as HSA-compatible under federal law, along with any plan the carrier designates as an HSA-qualified HDHP. That gives you many more options than before.</li>
@@ -398,9 +436,17 @@ footer p{max-width:900px}
 <!-- 8 -->
 <section aria-labelledby="h-med" class="guide" id="medicare">
 <p class="kicker">Section 8</p>
-<h2 id="h-med">The Medicare handoff: a client for life</h2>
+<h2 id="h-med">The Medicare handoff: a client for life</h2><aside aria-label="Quick takeaway" class="takeaway"><p class="takeaway-label">Quick takeaway</p><h3>Plan dates for each spouse</h3><p>Coordinate Medicare and Marketplace coverage before ending a plan. Keep both spouses' countable income and the full tax household on the Marketplace application.</p></aside>
 <p>The pre-65 relationship has a natural next step. Map it out from the first meeting so the client knows you'll be with them at 65.</p>
-<div class="table-wrap"><table>
+<div aria-labelledby="timeline-title" class="transition-timeline">
+<p class="kicker">Plan the transition</p><h3 id="timeline-title">From retirement to Medicare</h3>
+<ol class="timeline-steps">
+<li><span aria-hidden="true" class="timeline-number">01</span><div><p class="timeline-when">Before employer coverage ends</p><h4>Map the coverage bridge</h4><p>Confirm the enrollment window. Compare Marketplace, COBRA and retiree coverage using total cost, networks and effective dates.</p></div></li>
+<li><span aria-hidden="true" class="timeline-number">02</span><div><p class="timeline-when">Each year before Medicare</p><h4>Review income and coverage</h4><p>Update the annual MAGI projection, check HSA eligibility and revisit plans at Open Enrollment. Review changes mid-year and in Q4.</p></div></li>
+<li><span aria-hidden="true" class="timeline-number">03</span><div><p class="timeline-when">Around age 63</p><h4>Look ahead to IRMAA</h4><p>Medicare premiums generally use tax information from two years earlier. Review large taxable income events with the tax professional.</p></div></li>
+<li><span aria-hidden="true" class="timeline-number">04</span><div><p class="timeline-when">About 3 months before age 65</p><h4>Confirm enrollment dates</h4><p>Review the individual Medicare enrollment window and coverage choices. Confirm HSA timing, including any retroactive Part A coverage.</p></div></li>
+<li><span aria-hidden="true" class="timeline-number">05</span><div><p class="timeline-when">When Medicare begins</p><h4>Coordinate the handoff</h4><p>Update the Marketplace application and coordinate the transitioning spouse's coverage end date. Recalculate any younger spouse's assistance.</p></div></li>
+</ol><p class="timeline-note">Timing is individual: earlier Medicare eligibility, first-of-month birthdays and current-employment coverage can change the plan. See the detailed guidance below.</p></div><div class="table-wrap"><table>
 <thead><tr><th>When</th><th>What you do</th></tr></thead>
 <tbody>
 <tr><td>Age 63</td><td>Bring up IRMAA. Part B and D premiums generally use tax information from <strong>two years earlier</strong>. IRMAA MAGI is AGI plus tax-exempt interest, unlike ACA MAGI. Large taxable conversions can raise later premiums. A qualifying life-changing event, such as retirement with reduced income, may support a request for a new determination.</td></tr>
@@ -414,7 +460,7 @@ footer p{max-width:900px}
 <!-- 9 -->
 <section aria-labelledby="h-blue" class="guide" id="blueprint">
 <p class="kicker">Section 9</p>
-<h2 id="h-blue">The blueprint: find, close and keep</h2>
+<h2 id="h-blue">The blueprint: find, close and keep</h2><aside aria-label="Quick takeaway" class="takeaway"><p class="takeaway-label">Quick takeaway</p><h3>Build the annual review into the relationship</h3><p>Start with coverage dates, income, doctors and prescriptions. Schedule mid-year and Q4 check-ins, and coordinate the eventual Medicare transition.</p></aside>
 <h3>Where to find pre-65 retirees</h3>
 <div class="grid2">
 <div class="box"><h3>Referral partners</h3><ul><li>Fee-only financial planners and RIAs</li><li>CPAs and enrolled agents (especially Q4 tax planning)</li><li>Estate-planning attorneys</li><li>Retirement-income and annuity specialists</li></ul></div>
@@ -448,7 +494,7 @@ footer p{max-width:900px}
 <!-- 10 -->
 <section aria-labelledby="h-comp" class="guide" id="compliance">
 <p class="kicker">Section 10</p>
-<h2 id="h-comp">Compliance guardrails</h2>
+<h2 id="h-comp">Compliance guardrails</h2><aside aria-label="Quick takeaway" class="takeaway"><p class="takeaway-label">Quick takeaway</p><h3>Document both consent and application review</h3><p>Keep the required records for at least 10 years for federal Marketplace assistance. Complete the applicable registration, training and state requirements.</p></aside>
 <ul class="check">
 <li>Complete Plan Year 2027 Marketplace registration and training before you enroll anyone. See the <a href="../">ACA Certification Hub</a> for federal and state requirements.</li>
 <li>Document consumer consent before providing assistance and separately document the consumer's review and confirmation of application accuracy before submission. For the federal Marketplace, retain both records for at least <strong>10 years</strong> and provide them to CMS on request, including after the client relationship ends. Follow applicable state requirements too.</li>
@@ -487,6 +533,5 @@ footer p{max-width:900px}
 <p><a href="#">Back to top ↑</a> · <a href="../">ACA Certification Hub</a></p>
 </div>
 </footer>
-
-<script defer="" src="calculator.js"></script></body>
+<script defer="" src="calculator.js"></script><script defer="" src="guide-ui.js"></script></body>
 </html>
