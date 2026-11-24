@@ -283,6 +283,40 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .footer-meta { margin: 0; color: #8a8a8a; }
 .footer-meta a { color: #d98a9c; }
 
+/* ================= FEATURED GUIDE ================= */
+.feature { padding: 40px 0 0; }
+.feature-card {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 32px; align-items: center;
+  background: var(--crimson-tint); border: 1px solid rgba(170, 14, 51, 0.22);
+  border-left: 5px solid var(--crimson); border-radius: var(--radius); padding: 28px 32px;
+}
+.feature-tag {
+  font-family: var(--heading); font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  font-size: .75rem; color: var(--crimson); margin: 0 0 8px;
+}
+.feature-copy h2 { font-size: clamp(1.4rem, 3vw, 1.85rem); font-weight: 900; margin: 0 0 10px; }
+.feature-copy p { margin: 0 0 18px; max-width: 720px; color: var(--gray-700); }
+.feature-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.feature-btn {
+  display: inline-block; font-family: var(--heading); font-weight: 700; font-size: .95rem;
+  background: var(--crimson); color: #fff; border: 1px solid var(--crimson);
+  padding: 11px 20px; border-radius: var(--radius-sm);
+}
+.feature-btn:hover { background: var(--crimson-dark); border-color: var(--crimson-dark); color: #fff; text-decoration: none; }
+.feature-btn--ghost { background: #fff; color: var(--crimson); }
+.feature-btn--ghost:hover { background: #fff; color: var(--crimson-dark); }
+.feature-qr {
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  background: #fff; border: 1px solid var(--gray-200); border-radius: var(--radius-sm); padding: 12px;
+  font-family: var(--heading); font-size: .78rem; font-weight: 500; color: var(--gray-600); text-align: center;
+}
+.feature-qr:hover { text-decoration: none; box-shadow: var(--shadow-md); }
+.feature-qr img { display: block; width: 140px; height: 140px; }
+@media (max-width: 720px) {
+  .feature-card { grid-template-columns: 1fr; padding: 22px 20px; }
+  .feature-qr { display: none; }
+}
+
 /* ================= RESPONSIVE ================= */
 @media (max-width: 860px) {
   .contact-inner { grid-template-columns: 1fr; gap: 28px; }
